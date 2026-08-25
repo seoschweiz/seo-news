@@ -4,13 +4,21 @@
 
 <channel>
 
-<title>Notícias SEO Português</title>
+<title>
+Notícias SEO Português
+</title>
 
-<link>https://news.seoschweiz.net/pt/</link>
+<link>
+https://news.seoschweiz.net/pt/
+</link>
 
-<description>Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA.</description>
+<description>
+Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA.
+</description>
 
-<language>pt</language>
+<language>
+pt
+</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
@@ -20,99 +28,267 @@ type="application/rss+xml" />
 
 
   <item>
-    <title>SEO Update: Google testa destaque rosa em featured snippets, e a cor não é só estética</title>
-    <link>https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/</guid>
-    <pubDate>Mon, 24 Aug 2026 13:04:13 +0000</pubDate>
-    <description>Notícia SEO sobre Google testa destaque rosa em featured snippets, e a cor não é só estética. Descubra novidades sobre Google Search, rankings e otimização...</description>
+
+    <title>
+      SEO Update: Google testa destaque rosa em featured snippets, e a cor não é só estética
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 13:04:13 +0000
+    </pubDate>
+
+    <description>
+      Notícia SEO sobre Google testa destaque rosa em featured snippets, e a cor não é só estética. Descubra novidades sobre Google Search, rankings e otimização...
+    </description>
+
   </item>
 
   <item>
-    <title>Nova atualização Google Search: Google corrige bug de favicon e crawl stats do Search Console</title>
-    <link>https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/</guid>
-    <pubDate>Mon, 24 Aug 2026 11:03:08 +0000</pubDate>
-    <description>Novos desenvolvimentos sobre Google corrige bug de favicon e crawl stats do Search Console. A SEO Suíça acompanha Google Search, rankings, algoritmos e mar...</description>
+
+    <title>
+      Nova atualização Google Search: Google corrige bug de favicon e crawl stats do Search Console
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 11:03:08 +0000
+    </pubDate>
+
+    <description>
+      Novos desenvolvimentos sobre Google corrige bug de favicon e crawl stats do Search Console. A SEO Suíça acompanha Google Search, rankings, algoritmos e mar...
+    </description>
+
   </item>
 
   <item>
-    <title>SEO Update: Google reduz exibição do carousel de vídeos na busca e afeta descoberta de conteúdo técnico</title>
-    <link>https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/</guid>
-    <pubDate>Sun, 23 Aug 2026 13:30:03 +0000</pubDate>
-    <description>Notícia atual sobre Google reduz exibição do carousel de vídeos na busca e afeta descoberta de conteúdo técnico. SEO, Google Search e otimização acompanhad...</description>
+
+    <title>
+      SEO Update: Google reduz exibição do carousel de vídeos na busca e afeta descoberta de conteúdo técnico
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/
+    </guid>
+
+    <pubDate>
+      Sun, 23 Aug 2026 13:30:03 +0000
+    </pubDate>
+
+    <description>
+      Notícia atual sobre Google reduz exibição do carousel de vídeos na busca e afeta descoberta de conteúdo técnico. SEO, Google Search e otimização acompanhad...
+    </description>
+
   </item>
 
   <item>
-    <title>Nova atualização Google Search: Google corrige bug de favicons quebrados na busca</title>
-    <link>https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/</guid>
-    <pubDate>Sun, 23 Aug 2026 13:03:07 +0000</pubDate>
-    <description>Notícia SEO sobre Google corrige bug de favicons quebrados na busca. Descubra novidades sobre Google Search, rankings e otimização com a SEO Suíça.</description>
+
+    <title>
+      Nova atualização Google Search: Google corrige bug de favicons quebrados na busca
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/
+    </guid>
+
+    <pubDate>
+      Sun, 23 Aug 2026 13:03:07 +0000
+    </pubDate>
+
+    <description>
+      Notícia SEO sobre Google corrige bug de favicons quebrados na busca. Descubra novidades sobre Google Search, rankings e otimização com a SEO Suíça.
+    </description>
+
   </item>
 
   <item>
-    <title>SEO Suíça Update: Google confirma: não há rollout de update antes do anúncio oficial</title>
-    <link>https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/</guid>
-    <pubDate>Sat, 22 Aug 2026 13:30:18 +0000</pubDate>
-    <description>Atualização SEO sobre Google confirma: não há rollout de update antes do anúncio oficial. Informação recente sobre Google Search, algoritmos e otimização a...</description>
+
+    <title>
+      SEO Suíça Update: Google confirma: não há rollout de update antes do anúncio oficial
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/
+    </guid>
+
+    <pubDate>
+      Sat, 22 Aug 2026 13:30:18 +0000
+    </pubDate>
+
+    <description>
+      Atualização SEO sobre Google confirma: não há rollout de update antes do anúncio oficial. Informação recente sobre Google Search, algoritmos e otimização a...
+    </description>
+
   </item>
 
   <item>
-    <title>SEO Update: Marketing digital ganha força no Paraná e aproxima empresas de agências especializadas em resultados</title>
-    <link>https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/</guid>
-    <pubDate>Fri, 21 Aug 2026 18:32:17 +0000</pubDate>
-    <description>Atualização SEO sobre Marketing digital ganha força no Paraná e aproxima empresas de agências especializadas em resultados. Informação recente sobre Google...</description>
+
+    <title>
+      SEO Update: Marketing digital ganha força no Paraná e aproxima empresas de agências especializadas em resultados
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 18:32:17 +0000
+    </pubDate>
+
+    <description>
+      Atualização SEO sobre Marketing digital ganha força no Paraná e aproxima empresas de agências especializadas em resultados. Informação recente sobre Google...
+    </description>
+
   </item>
 
   <item>
-    <title>Novidade SEO: MEC oferece curso gratuito de segurança digital com certificado</title>
-    <link>https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/</guid>
-    <pubDate>Fri, 21 Aug 2026 13:53:37 +0000</pubDate>
-    <description>Notícia SEO sobre MEC oferece curso gratuito de segurança digital com certificado. Descubra novidades sobre Google Search, rankings e otimização com a SEO...</description>
+
+    <title>
+      Novidade SEO: MEC oferece curso gratuito de segurança digital com certificado
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 13:53:37 +0000
+    </pubDate>
+
+    <description>
+      Notícia SEO sobre MEC oferece curso gratuito de segurança digital com certificado. Descubra novidades sobre Google Search, rankings e otimização com a SEO...
+    </description>
+
   </item>
 
   <item>
-    <title>SEO Suíça Update: Google Discover ganha ajuste por palavras: o que muda para quem publica</title>
-    <link>https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/</guid>
-    <pubDate>Fri, 21 Aug 2026 13:03:35 +0000</pubDate>
-    <description>Notícia SEO sobre Google Discover ganha ajuste por palavras: o que muda para quem publica. Descubra novidades sobre Google Search, rankings e otimização co...</description>
+
+    <title>
+      SEO Suíça Update: Google Discover ganha ajuste por palavras: o que muda para quem publica
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 13:03:35 +0000
+    </pubDate>
+
+    <description>
+      Notícia SEO sobre Google Discover ganha ajuste por palavras: o que muda para quem publica. Descubra novidades sobre Google Search, rankings e otimização co...
+    </description>
+
   </item>
 
   <item>
-    <title>SEO Suíça Update: Google conclui o Spam Update de agosto de 2026: o que muda no ranking</title>
-    <link>https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/</guid>
-    <pubDate>Fri, 21 Aug 2026 11:03:58 +0000</pubDate>
-    <description>Notícia SEO sobre Google conclui o Spam Update de agosto de 2026: o que muda no ranking. Descubra novidades sobre Google Search, rankings e otimização com...</description>
+
+    <title>
+      SEO Suíça Update: Google conclui o Spam Update de agosto de 2026: o que muda no ranking
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 11:03:58 +0000
+    </pubDate>
+
+    <description>
+      Notícia SEO sobre Google conclui o Spam Update de agosto de 2026: o que muda no ranking. Descubra novidades sobre Google Search, rankings e otimização com...
+    </description>
+
   </item>
 
   <item>
-    <title>Novidade SEO: MEC abre mais 5 mil vagas para curso de Neuroeducação com certificado de 200 horas</title>
-    <link>https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/</guid>
-    <pubDate>Tue, 18 Aug 2026 17:02:44 +0000</pubDate>
-    <description>Notícia atual sobre MEC abre mais 5 mil vagas para curso de Neuroeducação com certificado de 200 horas. SEO, Google Search e otimização acompanhados pela S...</description>
+
+    <title>
+      Novidade SEO: MEC abre mais 5 mil vagas para curso de Neuroeducação com certificado de 200 horas
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/
+    </guid>
+
+    <pubDate>
+      Tue, 18 Aug 2026 17:02:44 +0000
+    </pubDate>
+
+    <description>
+      Notícia atual sobre MEC abre mais 5 mil vagas para curso de Neuroeducação com certificado de 200 horas. SEO, Google Search e otimização acompanhados pela S...
+    </description>
+
   </item>
 
   <item>
-    <title>Novo desenvolvimento SEO: MEC abre inscrições para cursos EAD gratuitos de Inteligência Artificial</title>
-    <link>https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/</guid>
-    <pubDate>Tue, 18 Aug 2026 15:23:48 +0000</pubDate>
-    <description>Notícia SEO sobre MEC abre inscrições para cursos EAD gratuitos de Inteligência Artificial. Descubra novidades sobre Google Search, rankings e otimização c...</description>
-  </item>
 
-  <item>
-    <title>Atualidade SEO: Google vai suportar o método HTTP QUERY, mas ainda não agora</title>
-    <link>https://news.seoschweiz.net/pt/news/google-vai-suportar-o-m-todo-http-query-mas-ainda-n-o-agora-imasters-3ab0236c/</link>
-    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-vai-suportar-o-m-todo-http-query-mas-ainda-n-o-agora-imasters-3ab0236c/</guid>
-    <pubDate>Tue, 18 Aug 2026 13:02:45 +0000</pubDate>
-    <description>Novos desenvolvimentos sobre Google vai suportar o método HTTP QUERY, mas ainda não agora. A SEO Suíça acompanha Google Search, rankings, algoritmos e mark...</description>
+    <title>
+      Novo desenvolvimento SEO: MEC abre inscrições para cursos EAD gratuitos de Inteligência Artificial
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/
+    </guid>
+
+    <pubDate>
+      Tue, 18 Aug 2026 15:23:48 +0000
+    </pubDate>
+
+    <description>
+      Notícia SEO sobre MEC abre inscrições para cursos EAD gratuitos de Inteligência Artificial. Descubra novidades sobre Google Search, rankings e otimização c...
+    </description>
+
   </item>
 
 
