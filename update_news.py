@@ -1,3 +1,4 @@
+import os
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -51,6 +52,50 @@ CONFIGS = {
         "updated": "Last automatic update:",
         "empty": "No recent SEO news found",
         "empty_text": "The system will search again during the next automatic update."
+    },
+
+    "fr": {
+        "output": "fr/index.html",
+        "hl": "fr",
+        "gl": "FR",
+        "ceid": "FR:fr",
+        "searches": [
+            "SEO",
+            "Google Search",
+            "référencement Google",
+            "algorithme Google",
+            "recherche IA"
+        ],
+        "title": "Actualités SEO",
+        "subtitle": "Google, référencement naturel, mises à jour des algorithmes, recherche IA et marketing digital.",
+        "meta_title": "Actualités SEO | Google, Référencement & Recherche IA",
+        "meta_description": "Actualités SEO sur Google, le référencement naturel, les mises à jour des algorithmes, la recherche IA, les mots-clés et le marketing digital.",
+        "read_more": "Lire l'article →",
+        "updated": "Dernière mise à jour automatique :",
+        "empty": "Aucune actualité SEO récente trouvée",
+        "empty_text": "Une nouvelle recherche sera effectuée lors de la prochaine mise à jour automatique."
+    },
+
+    "it": {
+        "output": "it/index.html",
+        "hl": "it",
+        "gl": "IT",
+        "ceid": "IT:it",
+        "searches": [
+            "SEO",
+            "Google Search",
+            "ottimizzazione motori di ricerca",
+            "algoritmo Google",
+            "AI Search"
+        ],
+        "title": "Notizie SEO",
+        "subtitle": "Google, ottimizzazione per i motori di ricerca, aggiornamenti degli algoritmi, AI Search e marketing digitale.",
+        "meta_title": "Notizie SEO | Google, Motori di Ricerca & AI Search",
+        "meta_description": "Notizie SEO su Google, ottimizzazione per i motori di ricerca, aggiornamenti degli algoritmi, AI Search, keyword e marketing digitale.",
+        "read_more": "Leggi l'articolo →",
+        "updated": "Ultimo aggiornamento automatico:",
+        "empty": "Nessuna notizia SEO recente trovata",
+        "empty_text": "Il sistema effettuerà una nuova ricerca al prossimo aggiornamento automatico."
     }
 }
 
@@ -79,13 +124,11 @@ def load_feed(url):
 
 def parse_feed(xml_data):
     root = ET.fromstring(xml_data)
-
     articles = []
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
 
     for item in root.findall(".//item"):
-
         title = item.findtext("title", "").strip()
         link = item.findtext("link", "").strip()
         pub_date = item.findtext("pubDate", "").strip()
@@ -117,18 +160,15 @@ def parse_feed(xml_data):
 
 
 def collect_news(config):
-
     all_articles = []
 
     for query in config["searches"]:
-
         print(f"Searching: {query}")
 
         try:
             url = get_feed_url(query, config)
             xml_data = load_feed(url)
             articles = parse_feed(xml_data)
-
             all_articles.extend(articles)
 
             print(f"{len(articles)} articles found.")
@@ -140,12 +180,10 @@ def collect_news(config):
 
 
 def remove_duplicates(articles):
-
     unique = []
     seen = set()
 
     for article in articles:
-
         key = article["title"].lower().strip()
 
         if key in seen:
@@ -158,7 +196,6 @@ def remove_duplicates(articles):
 
 
 def generate_page(language, config):
-
     articles = collect_news(config)
 
     articles.sort(
@@ -171,9 +208,7 @@ def generate_page(language, config):
     news_html = ""
 
     for article in articles:
-
         source = article["source"] or "Google News"
-
         date_text = article["date"].strftime("%d.%m.%Y %H:%M")
 
         news_html += f"""
@@ -202,7 +237,6 @@ rel="noopener noreferrer">
 """
 
     if not articles:
-
         news_html = f"""
 <article class="news-item">
 <h2>{config['empty']}</h2>
@@ -214,9 +248,7 @@ rel="noopener noreferrer">
         "%d.%m.%Y %H:%M UTC"
     )
 
-    canonical = (
-        f"https://news.seoschweiz.net/{language}/"
-    )
+    canonical = f"https://news.seoschweiz.net/{language}/"
 
     html = f"""<!DOCTYPE html>
 <html lang="{language}">
@@ -242,100 +274,100 @@ href="{canonical}">
 <style>
 
 * {{
-box-sizing: border-box;
+  box-sizing: border-box;
 }}
 
 body {{
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f5f5f5;
-color: #222;
-line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
 }}
 
 header {{
-background: #111;
-color: white;
-padding: 60px 20px;
-text-align: center;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }}
 
 header h1 {{
-font-size: 44px;
-margin: 0 0 10px;
+  font-size: 44px;
+  margin: 0 0 10px;
 }}
 
 header p {{
-font-size: 19px;
+  font-size: 19px;
 }}
 
 .languages {{
-margin-top: 20px;
+  margin-top: 20px;
 }}
 
 .languages a {{
-color: white;
-font-weight: bold;
-text-decoration: none;
-margin: 0 7px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 7px;
 }}
 
 .container {{
-max-width: 1000px;
-margin: auto;
-padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
 }}
 
 .news-item {{
-background: white;
-padding: 25px;
-margin-bottom: 20px;
-border-radius: 10px;
-box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }}
 
 .news-item h2 {{
-margin-top: 0;
-font-size: 22px;
+  margin-top: 0;
+  font-size: 22px;
 }}
 
 .news-item h2 a {{
-color: #222;
-text-decoration: none;
+  color: #222;
+  text-decoration: none;
 }}
 
 .news-item h2 a:hover {{
-color: #c00000;
+  color: #c00000;
 }}
 
 .source {{
-font-size: 14px;
-color: #777;
+  font-size: 14px;
+  color: #777;
 }}
 
 .read-more {{
-color: #c00000;
-text-decoration: none;
-font-weight: bold;
+  color: #c00000;
+  text-decoration: none;
+  font-weight: bold;
 }}
 
 .updated {{
-text-align: center;
-color: #777;
-margin: 35px 0;
-font-size: 14px;
+  text-align: center;
+  color: #777;
+  margin: 35px 0;
+  font-size: 14px;
 }}
 
 footer {{
-background: #111;
-color: #aaa;
-text-align: center;
-padding: 30px;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 30px;
 }}
 
 footer a {{
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }}
 
 </style>
@@ -348,16 +380,14 @@ text-decoration: none;
 
 <h1>{config['title']}</h1>
 
-<p>
-{config['subtitle']}
-</p>
+<p>{config['subtitle']}</p>
 
 <div class="languages">
-
 <a href="/">HOME</a> |
 <a href="/de/">DE</a> |
-<a href="/en/">EN</a>
-
+<a href="/en/">EN</a> |
+<a href="/fr/">FR</a> |
+<a href="/it/">IT</a>
 </div>
 
 </header>
@@ -382,16 +412,19 @@ SeoSchweiz.net
 </footer>
 
 </body>
-
 </html>
 """
+
+    output_dir = os.path.dirname(config["output"])
+
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
 
     with open(
         config["output"],
         "w",
         encoding="utf-8"
     ) as file:
-
         file.write(html)
 
     print(
@@ -400,7 +433,6 @@ SeoSchweiz.net
 
 
 def main():
-
     for language, config in CONFIGS.items():
         generate_page(language, config)
 
