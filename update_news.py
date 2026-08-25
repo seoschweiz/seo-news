@@ -4,14 +4,16 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from html import escape
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
+from email.utils import parsedate_to_datetime, format_datetime
 
 MAX_NEWS = 30
 MAX_AGE_DAYS = 7
+MAX_FEED_ITEMS = 20
 
 CONFIGS = {
     "de": {
         "output": "de/index.html",
+        "feed_output": "de/feed.xml",
         "hl": "de",
         "gl": "DE",
         "ceid": "DE:de",
@@ -29,11 +31,14 @@ CONFIGS = {
         "read_more": "Artikel lesen →",
         "updated": "Letztes automatisches Update:",
         "empty": "Momentan keine aktuellen SEO News gefunden",
-        "empty_text": "Beim nächsten automatischen Update wird erneut gesucht."
+        "empty_text": "Beim nächsten automatischen Update wird erneut gesucht.",
+        "feed_title": "SEO News Deutsch",
+        "feed_description": "Aktuelle deutschsprachige SEO News über Google, Suchmaschinenoptimierung, Algorithmen und AI Search."
     },
 
     "en": {
         "output": "en/index.html",
+        "feed_output": "en/feed.xml",
         "hl": "en",
         "gl": "US",
         "ceid": "US:en",
@@ -51,11 +56,14 @@ CONFIGS = {
         "read_more": "Read article →",
         "updated": "Last automatic update:",
         "empty": "No recent SEO news found",
-        "empty_text": "The system will search again during the next automatic update."
+        "empty_text": "The system will search again during the next automatic update.",
+        "feed_title": "SEO News English",
+        "feed_description": "Latest English-language SEO news about Google Search, SEO, algorithms and AI Search."
     },
 
     "fr": {
         "output": "fr/index.html",
+        "feed_output": "fr/feed.xml",
         "hl": "fr",
         "gl": "FR",
         "ceid": "FR:fr",
@@ -73,11 +81,14 @@ CONFIGS = {
         "read_more": "Lire l'article →",
         "updated": "Dernière mise à jour automatique :",
         "empty": "Aucune actualité SEO récente trouvée",
-        "empty_text": "Une nouvelle recherche sera effectuée lors de la prochaine mise à jour automatique."
+        "empty_text": "Une nouvelle recherche sera effectuée lors de la prochaine mise à jour automatique.",
+        "feed_title": "Actualités SEO Français",
+        "feed_description": "Actualités SEO en français sur Google, le référencement, les algorithmes et la recherche IA."
     },
 
     "it": {
         "output": "it/index.html",
+        "feed_output": "it/feed.xml",
         "hl": "it",
         "gl": "IT",
         "ceid": "IT:it",
@@ -95,11 +106,14 @@ CONFIGS = {
         "read_more": "Leggi l'articolo →",
         "updated": "Ultimo aggiornamento automatico:",
         "empty": "Nessuna notizia SEO recente trovata",
-        "empty_text": "Il sistema effettuerà una nuova ricerca al prossimo aggiornamento automatico."
+        "empty_text": "Il sistema effettuerà una nuova ricerca al prossimo aggiornamento automatico.",
+        "feed_title": "Notizie SEO Italiano",
+        "feed_description": "Notizie SEO in italiano su Google, ottimizzazione, algoritmi e AI Search."
     },
 
     "es": {
         "output": "es/index.html",
+        "feed_output": "es/feed.xml",
         "hl": "es",
         "gl": "ES",
         "ceid": "ES:es",
@@ -117,11 +131,14 @@ CONFIGS = {
         "read_more": "Leer artículo →",
         "updated": "Última actualización automática:",
         "empty": "No se encontraron noticias SEO recientes",
-        "empty_text": "El sistema volverá a buscar durante la próxima actualización automática."
+        "empty_text": "El sistema volverá a buscar durante la próxima actualización automática.",
+        "feed_title": "Noticias SEO Español",
+        "feed_description": "Noticias SEO en español sobre Google, posicionamiento, algoritmos y búsqueda con IA."
     },
 
     "pt": {
         "output": "pt/index.html",
+        "feed_output": "pt/feed.xml",
         "hl": "pt-PT",
         "gl": "PT",
         "ceid": "PT:pt-150",
@@ -139,7 +156,9 @@ CONFIGS = {
         "read_more": "Ler artigo →",
         "updated": "Última atualização automática:",
         "empty": "Nenhuma notícia SEO recente encontrada",
-        "empty_text": "O sistema irá pesquisar novamente durante a próxima atualização automática."
+        "empty_text": "O sistema irá pesquisar novamente durante a próxima atualização automática.",
+        "feed_title": "Notícias SEO Português",
+        "feed_description": "Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA."
     }
 }
 
@@ -311,6 +330,76 @@ Google SEO News & aktuelle Google Updates ansehen →
     return ""
 
 
+def rss_button(language):
+    return f"""
+<a class="rss-button" href="/{language}/feed.xml">
+RSS Feed
+</a>
+"""
+
+
+def generate_rss(language, config, articles):
+    os.makedirs(language, exist_ok=True)
+
+    feed_url = f"https://news.seoschweiz.net/{language}/feed.xml"
+    page_url = f"https://news.seoschweiz.net/{language}/"
+
+    items_xml = ""
+
+    for article in articles[:MAX_FEED_ITEMS]:
+        pub_date = format_datetime(article["date"])
+
+        source_text = article["source"] or "Google News"
+
+        items_xml += f"""
+  <item>
+    <title>{escape(article['title'])}</title>
+    <link>{escape(article['link'])}</link>
+    <guid isPermaLink="false">{escape(article['link'])}</guid>
+    <pubDate>{pub_date}</pubDate>
+    <description>{escape(source_text)}</description>
+  </item>
+"""
+
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+
+<title>{escape(config['feed_title'])}</title>
+
+<link>{page_url}</link>
+
+<description>
+{escape(config['feed_description'])}
+</description>
+
+<language>{language}</language>
+
+<atom:link
+xmlns:atom="http://www.w3.org/2005/Atom"
+href="{feed_url}"
+rel="self"
+type="application/rss+xml" />
+
+{items_xml}
+
+</channel>
+</rss>
+"""
+
+    with open(
+        config["feed_output"],
+        "w",
+        encoding="utf-8"
+    ) as file:
+        file.write(rss)
+
+    print(
+        f"{language}: RSS feed generated with "
+        f"{min(len(articles), MAX_FEED_ITEMS)} items."
+    )
+
+
 def generate_page(language, config):
     articles = collect_news(config)
 
@@ -321,6 +410,8 @@ def generate_page(language, config):
 
     articles = remove_duplicates(articles)
     articles = articles[:MAX_NEWS]
+
+    generate_rss(language, config, articles)
 
     news_html = ""
 
@@ -388,6 +479,11 @@ content="index, follow">
 <link rel="canonical"
 href="{canonical}">
 
+<link rel="alternate"
+type="application/rss+xml"
+title="{escape(config['feed_title'])}"
+href="https://news.seoschweiz.net/{language}/feed.xml">
+
 {hreflang_tags()}
 
 <style>
@@ -409,6 +505,7 @@ header {{
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
 }}
 
 header h1 {{
@@ -430,6 +527,18 @@ header p {{
   font-weight: bold;
   text-decoration: none;
   margin: 0 7px;
+}}
+
+.rss-button {{
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: white;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 9px 14px;
+  border-radius: 6px;
 }}
 
 .container {{
@@ -515,6 +624,8 @@ footer a {{
 <body>
 
 <header>
+
+{rss_button(language)}
 
 <h1>{config['title']}</h1>
 
