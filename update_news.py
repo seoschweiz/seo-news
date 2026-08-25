@@ -10,6 +10,7 @@ MAX_NEWS = 30
 MAX_AGE_DAYS = 7
 
 CONFIGS = {
+
     "de": {
         "output": "de/index.html",
         "hl": "de",
@@ -96,11 +97,56 @@ CONFIGS = {
         "updated": "Ultimo aggiornamento automatico:",
         "empty": "Nessuna notizia SEO recente trovata",
         "empty_text": "Il sistema effettuerà una nuova ricerca al prossimo aggiornamento automatico."
+    },
+
+    "es": {
+        "output": "es/index.html",
+        "hl": "es",
+        "gl": "ES",
+        "ceid": "ES:es",
+        "searches": [
+            "SEO",
+            "Google Search",
+            "posicionamiento SEO",
+            "algoritmo Google",
+            "búsqueda IA"
+        ],
+        "title": "Noticias SEO",
+        "subtitle": "Google, posicionamiento web, actualizaciones de algoritmos, búsqueda con IA y marketing digital.",
+        "meta_title": "Noticias SEO | Google, Posicionamiento & Búsqueda IA",
+        "meta_description": "Últimas noticias SEO sobre Google, posicionamiento web, actualizaciones de algoritmos, búsqueda con IA, palabras clave, backlinks y marketing digital.",
+        "read_more": "Leer artículo →",
+        "updated": "Última actualización automática:",
+        "empty": "No se encontraron noticias SEO recientes",
+        "empty_text": "El sistema volverá a buscar durante la próxima actualización automática."
+    },
+
+    "pt": {
+        "output": "pt/index.html",
+        "hl": "pt-PT",
+        "gl": "PT",
+        "ceid": "PT:pt-150",
+        "searches": [
+            "SEO",
+            "Google Search",
+            "otimização para motores de pesquisa",
+            "algoritmo Google",
+            "pesquisa IA"
+        ],
+        "title": "Notícias SEO",
+        "subtitle": "Google, otimização para motores de pesquisa, atualizações de algoritmos, pesquisa com IA e marketing digital.",
+        "meta_title": "Notícias SEO | Google, Otimização & Pesquisa IA",
+        "meta_description": "Últimas notícias SEO sobre Google, otimização para motores de pesquisa, atualizações de algoritmos, pesquisa com IA, palavras-chave, backlinks e marketing digital.",
+        "read_more": "Ler artigo →",
+        "updated": "Última atualização automática:",
+        "empty": "Nenhuma notícia SEO recente encontrada",
+        "empty_text": "O sistema irá pesquisar novamente durante a próxima atualização automática."
     }
 }
 
 
 def get_feed_url(query, config):
+
     encoded_query = urllib.parse.quote(query + " when:7d")
 
     return (
@@ -113,22 +159,35 @@ def get_feed_url(query, config):
 
 
 def load_feed(url):
+
     request = urllib.request.Request(
         url,
-        headers={"User-Agent": "Mozilla/5.0"}
+        headers={
+            "User-Agent": "Mozilla/5.0"
+        }
     )
 
-    with urllib.request.urlopen(request, timeout=20) as response:
+    with urllib.request.urlopen(
+        request,
+        timeout=20
+    ) as response:
+
         return response.read()
 
 
 def parse_feed(xml_data):
+
     root = ET.fromstring(xml_data)
+
     articles = []
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+    cutoff = (
+        datetime.now(timezone.utc)
+        - timedelta(days=MAX_AGE_DAYS)
+    )
 
     for item in root.findall(".//item"):
+
         title = item.findtext("title", "").strip()
         link = item.findtext("link", "").strip()
         pub_date = item.findtext("pubDate", "").strip()
@@ -138,10 +197,13 @@ def parse_feed(xml_data):
             continue
 
         try:
+
             date = parsedate_to_datetime(pub_date)
 
             if date.tzinfo is None:
-                date = date.replace(tzinfo=timezone.utc)
+                date = date.replace(
+                    tzinfo=timezone.utc
+                )
 
             if date < cutoff:
                 continue
@@ -160,42 +222,82 @@ def parse_feed(xml_data):
 
 
 def collect_news(config):
+
     all_articles = []
 
     for query in config["searches"]:
+
         print(f"Searching: {query}")
 
         try:
-            url = get_feed_url(query, config)
-            xml_data = load_feed(url)
-            articles = parse_feed(xml_data)
-            all_articles.extend(articles)
 
-            print(f"{len(articles)} articles found.")
+            url = get_feed_url(
+                query,
+                config
+            )
+
+            xml_data = load_feed(url)
+
+            articles = parse_feed(
+                xml_data
+            )
+
+            all_articles.extend(
+                articles
+            )
+
+            print(
+                f"{len(articles)} articles found."
+            )
 
         except Exception as error:
-            print(f"Error for {query}: {error}")
+
+            print(
+                f"Error for {query}: {error}"
+            )
 
     return all_articles
 
 
 def remove_duplicates(articles):
+
     unique = []
+
     seen = set()
 
     for article in articles:
-        key = article["title"].lower().strip()
+
+        key = (
+            article["title"]
+            .lower()
+            .strip()
+        )
 
         if key in seen:
             continue
 
         seen.add(key)
+
         unique.append(article)
 
     return unique
 
 
+def language_menu():
+
+    return """
+<a href="/">HOME</a> |
+<a href="/de/">DE</a> |
+<a href="/en/">EN</a> |
+<a href="/fr/">FR</a> |
+<a href="/it/">IT</a> |
+<a href="/es/">ES</a> |
+<a href="/pt/">PT</a>
+"""
+
+
 def generate_page(language, config):
+
     articles = collect_news(config)
 
     articles.sort(
@@ -203,13 +305,25 @@ def generate_page(language, config):
         reverse=True
     )
 
-    articles = remove_duplicates(articles)[:MAX_NEWS]
+    articles = remove_duplicates(
+        articles
+    )
+
+    articles = articles[:MAX_NEWS]
 
     news_html = ""
 
     for article in articles:
-        source = article["source"] or "Google News"
-        date_text = article["date"].strftime("%d.%m.%Y %H:%M")
+
+        source = (
+            article["source"]
+            or "Google News"
+        )
+
+        date_text = (
+            article["date"]
+            .strftime("%d.%m.%Y %H:%M")
+        )
 
         news_html += f"""
 <article class="news-item">
@@ -237,18 +351,30 @@ rel="noopener noreferrer">
 """
 
     if not articles:
+
         news_html = f"""
 <article class="news-item">
-<h2>{config['empty']}</h2>
-<p>{config['empty_text']}</p>
+
+<h2>
+{config['empty']}
+</h2>
+
+<p>
+{config['empty_text']}
+</p>
+
 </article>
 """
 
-    updated = datetime.now(timezone.utc).strftime(
-        "%d.%m.%Y %H:%M UTC"
+    updated = (
+        datetime.now(timezone.utc)
+        .strftime("%d.%m.%Y %H:%M UTC")
     )
 
-    canonical = f"https://news.seoschweiz.net/{language}/"
+    canonical = (
+        f"https://news.seoschweiz.net/"
+        f"{language}/"
+    )
 
     html = f"""<!DOCTYPE html>
 <html lang="{language}">
@@ -260,7 +386,9 @@ rel="noopener noreferrer">
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>{config['meta_title']}</title>
+<title>
+{config['meta_title']}
+</title>
 
 <meta name="description"
 content="{config['meta_description']}">
@@ -303,6 +431,7 @@ header p {{
 
 .languages {{
   margin-top: 20px;
+  line-height: 2;
 }}
 
 .languages a {{
@@ -378,16 +507,18 @@ footer a {{
 
 <header>
 
-<h1>{config['title']}</h1>
+<h1>
+{config['title']}
+</h1>
 
-<p>{config['subtitle']}</p>
+<p>
+{config['subtitle']}
+</p>
 
 <div class="languages">
-<a href="/">HOME</a> |
-<a href="/de/">DE</a> |
-<a href="/en/">EN</a> |
-<a href="/fr/">FR</a> |
-<a href="/it/">IT</a>
+
+{language_menu()}
+
 </div>
 
 </header>
@@ -397,7 +528,10 @@ footer a {{
 {news_html}
 
 <div class="updated">
-{config['updated']} {updated}
+
+{config['updated']}
+{updated}
+
 </div>
 
 </main>
@@ -405,6 +539,7 @@ footer a {{
 <footer>
 
 SEO News by
+
 <a href="https://www.seoschweiz.net/">
 SeoSchweiz.net
 </a>
@@ -412,29 +547,47 @@ SeoSchweiz.net
 </footer>
 
 </body>
+
 </html>
 """
 
-    output_dir = os.path.dirname(config["output"])
+    output_dir = os.path.dirname(
+        config["output"]
+    )
 
     if output_dir:
-        os.makedirs(output_dir, exist_ok=True)
+
+        os.makedirs(
+            output_dir,
+            exist_ok=True
+        )
 
     with open(
         config["output"],
         "w",
         encoding="utf-8"
     ) as file:
+
         file.write(html)
 
     print(
-        f"{language}: {len(articles)} articles published."
+        f"{language}: "
+        f"{len(articles)} articles published."
     )
 
 
 def main():
+
     for language, config in CONFIGS.items():
-        generate_page(language, config)
+
+        print(
+            f"\n--- Updating {language} ---"
+        )
+
+        generate_page(
+            language,
+            config
+        )
 
 
 if __name__ == "__main__":
