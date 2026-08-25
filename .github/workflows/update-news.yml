@@ -1,0 +1,34 @@
+name: Update SEO News
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update SEO news
+        run: python update_news.py
+
+      - name: Commit updated news
+        run: |
+          git config user.name "SEO News Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add de/index.html
+          git diff --cached --quiet || git commit -m "Automatic SEO news update"
+          git push
