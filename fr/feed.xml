@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <rss version="2.0">
+
 <channel>
 
-<title>Actualités SEO Français</title>
+<title>
+Actualités SEO Français
+</title>
 
-<link>https://news.seoschweiz.net/fr/</link>
+<link>
+https://news.seoschweiz.net/fr/
+</link>
 
 <description>
 Actualités SEO en français sur Google, le référencement, les algorithmes et la recherche IA.
 </description>
 
-<language>fr</language>
+<language>
+fr
+</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
@@ -20,165 +28,486 @@ type="application/rss+xml" />
 
 
   <item>
-    <title>Ici tout commence : qui est Thomas Brazete, choisi pour le rôle de Tony dans la nouvelle promotion de l’Institut ? - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMi6wFBVV95cUxPOTBac1o4MXZmaFNnRlZ2cW55TmRGcHktc1NFQ3hkdVVNb2JwU1JHMEVnUTE3dk42WU1QS2o5WGh3NkJmRWJuNGdPOGRXYy1oSmh5N0NnelhkaW92SnRhdWVQRFVabmdEVTBoVVk5MDR5RE1sU1dhcDFTMlZsNUEwVXQ5QXMwcU1xUk9ZcDh0R2JweFpXcDc2TGJYS3MtNnRzbkpsdkJ6ejB4bjRoeXBacXVjYVA4bGJWNktpTkh5eDBtc0hkZWtBMlV0dUpEWWY3QWh2VzZvYjQ1TDRDZ2h0OTZKZ0JqWE5NRTJR?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi6wFBVV95cUxPOTBac1o4MXZmaFNnRlZ2cW55TmRGcHktc1NFQ3hkdVVNb2JwU1JHMEVnUTE3dk42WU1QS2o5WGh3NkJmRWJuNGdPOGRXYy1oSmh5N0NnelhkaW92SnRhdWVQRFVabmdEVTBoVVk5MDR5RE1sU1dhcDFTMlZsNUEwVXQ5QXMwcU1xUk9ZcDh0R2JweFpXcDc2TGJYS3MtNnRzbkpsdkJ6ejB4bjRoeXBacXVjYVA4bGJWNktpTkh5eDBtc0hkZWtBMlV0dUpEWWY3QWh2VzZvYjQ1TDRDZ2h0OTZKZ0JqWE5NRTJR?oc=5</guid>
-    <pubDate>Tue, 25 Aug 2026 10:30:10 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      Ici tout commence : qui est Thomas Brazete, choisi pour le rôle de Tony dans la nouvelle promotion de l’Institut ? - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/ici-tout-commence-qui-est-thomas-brazete-choisi-pour-le-r-le-de-tony-d-1ad391e6/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/ici-tout-commence-qui-est-thomas-brazete-choisi-pour-le-r-le-de-tony-d-1ad391e6/
+    </guid>
+
+    <pubDate>
+      Tue, 25 Aug 2026 10:30:10 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>Une étude Pew confirme la forte hausse des textes rédigés par IA sur le web depuis le lancement de ChatGPT - lefilia.fr</title>
-    <link>https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZWlkWjRzOE5RUTI1YkZWXzh6T2FBaTlIRlp0T1J2UkZzWE5nMWhkYWJqbC1xeWIxcF8xbkQ2NzhEUjZCZWMyVlJkQ0FqNTJ3VnQwRU5NTTJfckRFVEs1WnYwNTUtdWtTWmVfd3hicFFSQkI2NWlYUnZiX1BLdmZMS0FUZnRldFZsd1dybjl2ZEl2R0ZBUTJEOC15ekw2QlUzdUdiWnprZTFUX2Z2SnJGTDRrRnVtVGFGU0tDVUt3a3c1ZWpuOEs2ZllxNU91bDlpWmNydzR3UzJqZzNXVnc?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZWlkWjRzOE5RUTI1YkZWXzh6T2FBaTlIRlp0T1J2UkZzWE5nMWhkYWJqbC1xeWIxcF8xbkQ2NzhEUjZCZWMyVlJkQ0FqNTJ3VnQwRU5NTTJfckRFVEs1WnYwNTUtdWtTWmVfd3hicFFSQkI2NWlYUnZiX1BLdmZMS0FUZnRldFZsd1dybjl2ZEl2R0ZBUTJEOC15ekw2QlUzdUdiWnprZTFUX2Z2SnJGTDRrRnVtVGFGU0tDVUt3a3c1ZWpuOEs2ZllxNU91bDlpWmNydzR3UzJqZzNXVnc?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 18:22:49 +0000</pubDate>
-    <description>lefilia.fr</description>
+
+    <title>
+      Une étude Pew confirme la forte hausse des textes rédigés par IA sur le web depuis le lancement de ChatGPT - lefilia.fr
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/une-tude-pew-confirme-la-forte-hausse-des-textes-r-dig-s-par-ia-sur-le-fdcb4a08/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/une-tude-pew-confirme-la-forte-hausse-des-textes-r-dig-s-par-ia-sur-le-fdcb4a08/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 18:22:49 +0000
+    </pubDate>
+
+    <description>
+      lefilia.fr
+    </description>
+
   </item>
 
   <item>
-    <title>Llms.txt : qu’est-ce que c’est, à quoi ça sert et où l’utiliser - smash-marketing.fr</title>
-    <link>https://news.google.com/rss/articles/CBMimgFBVV95cUxNWkNQUDYyQWlmN2kyUVRsNFgwaXZtMWZrbzBkc09CSDdpSWp0OWpNMzFtZmtSZ0xnWFBUR0Uwd2s3cDUycWlGSUVaTngzQXo5RFhab3c0TkNNUW1EODRfRXB2WUs0VzgtbXczRnFkN2doUWIzN2pXdE5kNnI1aTZjamVOQzI2dlZHRklGWlJod3htb0h4NW54eXNB?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMimgFBVV95cUxNWkNQUDYyQWlmN2kyUVRsNFgwaXZtMWZrbzBkc09CSDdpSWp0OWpNMzFtZmtSZ0xnWFBUR0Uwd2s3cDUycWlGSUVaTngzQXo5RFhab3c0TkNNUW1EODRfRXB2WUs0VzgtbXczRnFkN2doUWIzN2pXdE5kNnI1aTZjamVOQzI2dlZHRklGWlJod3htb0h4NW54eXNB?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 16:50:10 +0000</pubDate>
-    <description>smash-marketing.fr</description>
+
+    <title>
+      Llms.txt : qu’est-ce que c’est, à quoi ça sert et où l’utiliser - smash-marketing.fr
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/llms-txt-qu-est-ce-que-c-est-quoi-a-sert-et-o-l-utiliser-smash-marketi-6c969648/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/llms-txt-qu-est-ce-que-c-est-quoi-a-sert-et-o-l-utiliser-smash-marketi-6c969648/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 16:50:10 +0000
+    </pubDate>
+
+    <description>
+      smash-marketing.fr
+    </description>
+
   </item>
 
   <item>
-    <title>Koh-Lanta All Stars 2026 : candidats, date de diffusion, lieu, to ... - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMiiwJBVV95cUxNelZEaUhjWWtUNXFKajI4OWVwLVJ0UkhPQnNKT2Y1a3RjSDNiWTRtNmFfZ1lSeVc5RG9qNDc5d3hFLWtBZWRjbDFwd2puQ296X19yRG1qQXkzLXl3bjhwMTZoTm5Ia1RXRWU2V0FHZVE4VFo1WXRfbVB5cE1haFFTUHUzQTJwTENudHlPcDdtYnQtNlZoVzhlOU9wSUVVMnpYeFQ3bGJJRkFGMWlJTUNoSkxZNEdTdTItRjhvejEwbG1qMC1ZQWYtaW5mX0hlMTE5bHc0S01VbUtyX24zMjlpaWxoTGFkdUVNM2VQLWQyV1NhcUNjdVdtSzk5aWRCeUktMmxuVHg5MHZkWVk?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiiwJBVV95cUxNelZEaUhjWWtUNXFKajI4OWVwLVJ0UkhPQnNKT2Y1a3RjSDNiWTRtNmFfZ1lSeVc5RG9qNDc5d3hFLWtBZWRjbDFwd2puQ296X19yRG1qQXkzLXl3bjhwMTZoTm5Ia1RXRWU2V0FHZVE4VFo1WXRfbVB5cE1haFFTUHUzQTJwTENudHlPcDdtYnQtNlZoVzhlOU9wSUVVMnpYeFQ3bGJJRkFGMWlJTUNoSkxZNEdTdTItRjhvejEwbG1qMC1ZQWYtaW5mX0hlMTE5bHc0S01VbUtyX24zMjlpaWxoTGFkdUVNM2VQLWQyV1NhcUNjdVdtSzk5aWRCeUktMmxuVHg5MHZkWVk?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 12:30:34 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      Koh-Lanta All Stars 2026 : candidats, date de diffusion, lieu, to ... - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/koh-lanta-all-stars-2026-candidats-date-de-diffusion-lieu-to-t-l-star-9184b326/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/koh-lanta-all-stars-2026-candidats-date-de-diffusion-lieu-to-t-l-star-9184b326/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 12:30:34 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>TECH Global University, reconnue avec le prix Google Partner Premier - Tribune de Lyon</title>
-    <link>https://news.google.com/rss/articles/CBMisAFBVV95cUxQWTBCZHFIOXNFNng1b3VKcDZlb2FCZUhsZXVOeFFGSXYydkxleXhIR0lyVWEzOUJsQ2NyVVFfWWFVenU2MkUxNTJ0Nm5uaktDcXpQRWY5b0VVbnJOb0lWOU5zUjRQbjRQaGlHZ1prQXpwR3Q1b2xaNDgtRmFMYUYxTHYwTllEcTZsNXJlR2lHcW1OQVdZeVZ6YzRzVkp4U2NKdFY4eW5MQ1ROakdvOTFCSw?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMisAFBVV95cUxQWTBCZHFIOXNFNng1b3VKcDZlb2FCZUhsZXVOeFFGSXYydkxleXhIR0lyVWEzOUJsQ2NyVVFfWWFVenU2MkUxNTJ0Nm5uaktDcXpQRWY5b0VVbnJOb0lWOU5zUjRQbjRQaGlHZ1prQXpwR3Q1b2xaNDgtRmFMYUYxTHYwTllEcTZsNXJlR2lHcW1OQVdZeVZ6YzRzVkp4U2NKdFY4eW5MQ1ROakdvOTFCSw?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 12:28:49 +0000</pubDate>
-    <description>Tribune de Lyon</description>
+
+    <title>
+      TECH Global University, reconnue avec le prix Google Partner Premier - Tribune de Lyon
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/tech-global-university-reconnue-avec-le-prix-google-partner-premier-tr-cd01887c/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/tech-global-university-reconnue-avec-le-prix-google-partner-premier-tr-cd01887c/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 12:28:49 +0000
+    </pubDate>
+
+    <description>
+      Tribune de Lyon
+    </description>
+
   </item>
 
   <item>
-    <title>The Voice Kids 2026 : jury, gagnants, replay, dates de diffusion… guide complet du télécrochet de TF1 - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSlBac0llbXlod3dfdVk1M2hUNVJTTUNQVkU3NnZTQXZ4Vk5UWDRIRTRSU3VxdzdyODZGZWZhRE44eDg2Yk9wdEtHaVNHS0FzdklBNzQ0RFRKWGxIRnpCSmRRRUxYR2t6bEVVM3YtemRMMzNUcUNMeWxmTXZhc0U5QjE1bDYtc1FEbGRWeUtPYWd4SEZWMVdHSUx1ZUFhaVZjT2V3NTExS0Y1Zjc5cjFrVlNleHZnWXVQYnpQUnUwQ1ZzRXJkU2hUZTlGelNFd2RKWWF0dms1Yw?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSlBac0llbXlod3dfdVk1M2hUNVJTTUNQVkU3NnZTQXZ4Vk5UWDRIRTRSU3VxdzdyODZGZWZhRE44eDg2Yk9wdEtHaVNHS0FzdklBNzQ0RFRKWGxIRnpCSmRRRUxYR2t6bEVVM3YtemRMMzNUcUNMeWxmTXZhc0U5QjE1bDYtc1FEbGRWeUtPYWd4SEZWMVdHSUx1ZUFhaVZjT2V3NTExS0Y1Zjc5cjFrVlNleHZnWXVQYnpQUnUwQ1ZzRXJkU2hUZTlGelNFd2RKWWF0dms1Yw?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 10:30:13 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      The Voice Kids 2026 : jury, gagnants, replay, dates de diffusion… guide complet du télécrochet de TF1 - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/the-voice-kids-2026-jury-gagnants-replay-dates-de-diffusion-guide-comp-12283ef6/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/the-voice-kids-2026-jury-gagnants-replay-dates-de-diffusion-guide-comp-12283ef6/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 10:30:13 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>Google August 2026 SPAM update : welcome back ! - Leptidigital</title>
-    <link>https://news.google.com/rss/articles/CBMiigFBVV95cUxPakJCWXI5LXM2SVVTZnR4Y3pSMjZzZG9pem9rMXFoeU9PUmp6UkhuQnJxRm5NaHlGeElBbHg4eHlLVzdPXzJqTnNGbXFBeEZrbGlYWnNiZkoza2ZFcG9FSVB1WXo4d0pWYUdfdWJ5bV9GRklXV1E5SjhHQzVYZEZOT3Bjd1hENWlQNHc?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiigFBVV95cUxPakJCWXI5LXM2SVVTZnR4Y3pSMjZzZG9pem9rMXFoeU9PUmp6UkhuQnJxRm5NaHlGeElBbHg4eHlLVzdPXzJqTnNGbXFBeEZrbGlYWnNiZkoza2ZFcG9FSVB1WXo4d0pWYUdfdWJ5bV9GRklXV1E5SjhHQzVYZEZOT3Bjd1hENWlQNHc?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 09:40:10 +0000</pubDate>
-    <description>Leptidigital</description>
+
+    <title>
+      Google August 2026 SPAM update : welcome back ! - Leptidigital
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/google-august-2026-spam-update-welcome-back-leptidigital-af33b725/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/google-august-2026-spam-update-welcome-back-leptidigital-af33b725/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 09:40:10 +0000
+    </pubDate>
+
+    <description>
+      Leptidigital
+    </description>
+
   </item>
 
   <item>
-    <title>Philippe Bouvard s&#x27;éteint à 96 ans : de quoi est mort le créateur des Grosses Têtes ? - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdE0wQjJURUlsLWVYa1JLVVZveFA0R083bjFnS2x4U3piLTJ1X3RuT1FaLTFISnByRkNlTk5UZjZpSHBTcVVKT080aHVKSXlhTjJtdFdfVktiSEFuR2Y4UXJvZjBiNHBKREQwclFxb2c3RzdjcGFza25UalZYckZxRUpqN1I2NW1nWFVpcThQME9rYjg5ZVZnU0kwQXpxRG90ZUNkbnZoMEk1RHpiMGNXRHFUdzZnS3c1ZkZB?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdE0wQjJURUlsLWVYa1JLVVZveFA0R083bjFnS2x4U3piLTJ1X3RuT1FaLTFISnByRkNlTk5UZjZpSHBTcVVKT080aHVKSXlhTjJtdFdfVktiSEFuR2Y4UXJvZjBiNHBKREQwclFxb2c3RzdjcGFza25UalZYckZxRUpqN1I2NW1nWFVpcThQME9rYjg5ZVZnU0kwQXpxRG90ZUNkbnZoMEk1RHpiMGNXRHFUdzZnS3c1ZkZB?oc=5</guid>
-    <pubDate>Mon, 24 Aug 2026 08:15:18 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      Philippe Bouvard s&#x27;éteint à 96 ans : de quoi est mort le créateur des Grosses Têtes ? - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/philippe-bouvard-s-teint-96-ans-de-quoi-est-mort-le-cr-ateur-des-gross-f1aba1ba/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/philippe-bouvard-s-teint-96-ans-de-quoi-est-mort-le-cr-ateur-des-gross-f1aba1ba/
+    </guid>
+
+    <pubDate>
+      Mon, 24 Aug 2026 08:15:18 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>PSG – Rennes : à quelle heure et sur quelle chaîne voir le match amical ? - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMiqAFBVV95cUxORFNlczFZb285ZFNSNGY2YnlIWEdfdzhqVFlzaXhuV1hXbGlVQjhGZ25lS1RzSXJqWTAyOXFUcDZxczdrWlQ2cXo2NzdoemNSODM2NDJiSk90Q2lUcXJOalJyT1NldXR3cFdoZFlxVXVidkpLSVNKaWcxYWZhbGZkcHB4ZGZrVjB5LWQzR2lmRW4xdmVoWnRGRWgtc043TGNFb0tkOExGOXU?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiqAFBVV95cUxORFNlczFZb285ZFNSNGY2YnlIWEdfdzhqVFlzaXhuV1hXbGlVQjhGZ25lS1RzSXJqWTAyOXFUcDZxczdrWlQ2cXo2NzdoemNSODM2NDJiSk90Q2lUcXJOalJyT1NldXR3cFdoZFlxVXVidkpLSVNKaWcxYWZhbGZkcHB4ZGZrVjB5LWQzR2lmRW4xdmVoWnRGRWgtc043TGNFb0tkOExGOXU?oc=5</guid>
-    <pubDate>Sun, 23 Aug 2026 05:30:48 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      PSG – Rennes : à quelle heure et sur quelle chaîne voir le match amical ? - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/psg-rennes-quelle-heure-et-sur-quelle-cha-ne-voir-le-match-amical-t-l--6708c4eb/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/psg-rennes-quelle-heure-et-sur-quelle-cha-ne-voir-le-match-amical-t-l--6708c4eb/
+    </guid>
+
+    <pubDate>
+      Sun, 23 Aug 2026 05:30:48 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>Top 7 des meilleures plateformes e-commerce en 2026 - Clubic</title>
-    <link>https://news.google.com/rss/articles/CBMiogFBVV95cUxONVNRbWxXNmtNaXlia2gyc3ZJY3pIOVl1OHd6RXQ1VWJkZm1zUTVUb0V6c1VYcFVjclFlanRVNUZfOHFDaUp0TEoyaTQ0ZUpaMXZxV210RWhSMTVQTnRxMHhYaExDd1F1THBDQ1hpeUpSdGZJRUoyeUtYbFVlNjdzd1ZMdkVjZ09oUVBTSmhSWXUxMFEySlIzNnVKZkJfdWZISmc?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiogFBVV95cUxONVNRbWxXNmtNaXlia2gyc3ZJY3pIOVl1OHd6RXQ1VWJkZm1zUTVUb0V6c1VYcFVjclFlanRVNUZfOHFDaUp0TEoyaTQ0ZUpaMXZxV210RWhSMTVQTnRxMHhYaExDd1F1THBDQ1hpeUpSdGZJRUoyeUtYbFVlNjdzd1ZMdkVjZ09oUVBTSmhSWXUxMFEySlIzNnVKZkJfdWZISmc?oc=5</guid>
-    <pubDate>Sat, 22 Aug 2026 09:42:00 +0000</pubDate>
-    <description>Clubic</description>
+
+    <title>
+      Top 7 des meilleures plateformes e-commerce en 2026 - Clubic
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/top-7-des-meilleures-plateformes-e-commerce-en-2026-clubic-2784e29a/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/top-7-des-meilleures-plateformes-e-commerce-en-2026-clubic-2784e29a/
+    </guid>
+
+    <pubDate>
+      Sat, 22 Aug 2026 09:42:00 +0000
+    </pubDate>
+
+    <description>
+      Clubic
+    </description>
+
   </item>
 
   <item>
-    <title>Fuite de données chez OTEIS Conseil &amp; Ingénierie : intrusion par... - FrenchBreaches</title>
-    <link>https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVGdCZ0tYYTVTZzVlYWFvdURaOUZOMXZMLW5XXzUyV25lZlVMSzZSTTBQUE90eTVFMzJyalg4YVBjNzEwVVlNQnBBTkJTUWNJYldlb0NST3dqanRFc0ViODluSDU2ZHVxQ2IxeS1aUGNVVThJQ3ZicWlVTXRYWDBOQUdpSjRod25uX1hsV3Y2cEJlM3c0MS03VTQzNGY3Y2l4N25GdTB1dDBiTFJwNFRLN2FNTXpaLVMxYnZMNm5CaktlWjdrNE9tSG9OTk5XSU02LWJNag?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVGdCZ0tYYTVTZzVlYWFvdURaOUZOMXZMLW5XXzUyV25lZlVMSzZSTTBQUE90eTVFMzJyalg4YVBjNzEwVVlNQnBBTkJTUWNJYldlb0NST3dqanRFc0ViODluSDU2ZHVxQ2IxeS1aUGNVVThJQ3ZicWlVTXRYWDBOQUdpSjRod25uX1hsV3Y2cEJlM3c0MS03VTQzNGY3Y2l4N25GdTB1dDBiTFJwNFRLN2FNTXpaLVMxYnZMNm5CaktlWjdrNE9tSG9OTk5XSU02LWJNag?oc=5</guid>
-    <pubDate>Fri, 21 Aug 2026 22:00:00 +0000</pubDate>
-    <description>FrenchBreaches</description>
+
+    <title>
+      Fuite de données chez OTEIS Conseil &amp; Ingénierie : intrusion par... - FrenchBreaches
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/fuite-de-donn-es-chez-oteis-conseil-ing-nierie-intrusion-par-frenchbre-1483f792/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/fuite-de-donn-es-chez-oteis-conseil-ing-nierie-intrusion-par-frenchbre-1483f792/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 22:00:00 +0000
+    </pubDate>
+
+    <description>
+      FrenchBreaches
+    </description>
+
   </item>
 
   <item>
-    <title>Biographie | Jordan Belly - Journaliste et rédacteur web indépendant - Futura, le média qui explore le monde</title>
-    <link>https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaGZxdlRPelhQaGc1MEZBUVJPd0RxejhILXVfTlQ0MFVQYng3VkRrZ0pnVVB1ZEdpWkJJVUlpXzEwZVBlQmJhejZyQW9SUC1pNldRU2YxbnhHV0ZRS3luU1FrZEozdmo4QnlPeHY2aU5GekczWVhiaXBSbXk5eXlmZ3huT1hyVlV1?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaGZxdlRPelhQaGc1MEZBUVJPd0RxejhILXVfTlQ0MFVQYng3VkRrZ0pnVVB1ZEdpWkJJVUlpXzEwZVBlQmJhejZyQW9SUC1pNldRU2YxbnhHV0ZRS3luU1FrZEozdmo4QnlPeHY2aU5GekczWVhiaXBSbXk5eXlmZ3huT1hyVlV1?oc=5</guid>
-    <pubDate>Fri, 21 Aug 2026 19:01:04 +0000</pubDate>
-    <description>Futura, le média qui explore le monde</description>
+
+    <title>
+      Biographie | Jordan Belly - Journaliste et rédacteur web indépendant - Futura, le média qui explore le monde
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/biographie-jordan-belly-journaliste-et-r-dacteur-web-ind-pendant-futur-9a83a1f9/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/biographie-jordan-belly-journaliste-et-r-dacteur-web-ind-pendant-futur-9a83a1f9/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 19:01:04 +0000
+    </pubDate>
+
+    <description>
+      Futura, le média qui explore le monde
+    </description>
+
   </item>
 
   <item>
-    <title>Mort de Hayden Panettiere : pourquoi sa maison hollywoodienne à 3 millions de dollars a-t-elle été démolie ? - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdkFmUndRSlRBaFlXOTlEYnh3REM5TGJqcmRnMFFTQnB2NFJYY1RjdU1vRlp3V29JZkQzS1hWdTZEYnRnWm9RLVkybjNLTXVDN1dZUlk5YzNQT3psVDhjODdfSkUybW9BSkVDWmpWYnNhYjhKOTJac0hOUjYyNGRFc1NOMmltbDd5azN1SFpTMTBMZnRlTzJLVldnRWVqcWV5Qk5VWlRXYkNkS3AtcEFON0VUTmppQ09aZWNaZmJ5WXBJLUwzSDRQZURZOFV6NFlxY0ZKYVYtQkZKcXM?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdkFmUndRSlRBaFlXOTlEYnh3REM5TGJqcmRnMFFTQnB2NFJYY1RjdU1vRlp3V29JZkQzS1hWdTZEYnRnWm9RLVkybjNLTXVDN1dZUlk5YzNQT3psVDhjODdfSkUybW9BSkVDWmpWYnNhYjhKOTJac0hOUjYyNGRFc1NOMmltbDd5azN1SFpTMTBMZnRlTzJLVldnRWVqcWV5Qk5VWlRXYkNkS3AtcEFON0VUTmppQ09aZWNaZmJ5WXBJLUwzSDRQZURZOFV6NFlxY0ZKYVYtQkZKcXM?oc=5</guid>
-    <pubDate>Fri, 21 Aug 2026 10:30:46 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      Mort de Hayden Panettiere : pourquoi sa maison hollywoodienne à 3 millions de dollars a-t-elle été démolie ? - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/mort-de-hayden-panettiere-pourquoi-sa-maison-hollywoodienne-3-millions-25cf261f/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/mort-de-hayden-panettiere-pourquoi-sa-maison-hollywoodienne-3-millions-25cf261f/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 10:30:46 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>Cauchemar en cuisine sur M6 : le restaurant d&#x27;Isabelle et Jeffrey à Saint-Berthevin-la-Tannière est-il toujours ouvert ? - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMihwJBVV95cUxQWlJwX293bG9rR00xaEZnUzJXN1pySmpPN0ZWa0tfaS1JZkcwMElaQ3JsRVVGNTlTVDhGUGRaa2R0c19TdTcwSC1TYU1qdURRVTVRaENySTNFMERGWWJhWWFTOEQ3N0VGRVhMTjhSNVBPOEVhMlEybkM3WWhNVUJtdWJ6NHNMbm1JTHY1VjA5Z2xxOVU3dXJiX1dFU0Q5VGhKMmhUNXBLYzBXNFo5NjNFVDEzUU5wSDNVMEF0cWZJV0pUTkc0MS05TXpzX3VKb2RwMi1OZDB6S1NFcUc0RWhTblZmUWZPRERBcDNPeEhRUE1BaDJRUEFiZkMxVEZpZVBJcDFkZkl6OA?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMihwJBVV95cUxQWlJwX293bG9rR00xaEZnUzJXN1pySmpPN0ZWa0tfaS1JZkcwMElaQ3JsRVVGNTlTVDhGUGRaa2R0c19TdTcwSC1TYU1qdURRVTVRaENySTNFMERGWWJhWWFTOEQ3N0VGRVhMTjhSNVBPOEVhMlEybkM3WWhNVUJtdWJ6NHNMbm1JTHY1VjA5Z2xxOVU3dXJiX1dFU0Q5VGhKMmhUNXBLYzBXNFo5NjNFVDEzUU5wSDNVMEF0cWZJV0pUTkc0MS05TXpzX3VKb2RwMi1OZDB6S1NFcUc0RWhTblZmUWZPRERBcDNPeEhRUE1BaDJRUEFiZkMxVEZpZVBJcDFkZkl6OA?oc=5</guid>
-    <pubDate>Fri, 21 Aug 2026 09:30:38 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      Cauchemar en cuisine sur M6 : le restaurant d&#x27;Isabelle et Jeffrey à Saint-Berthevin-la-Tannière est-il toujours ouvert ? - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/cauchemar-en-cuisine-sur-m6-le-restaurant-d-isabelle-et-jeffrey-saint--0bed1f3f/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/cauchemar-en-cuisine-sur-m6-le-restaurant-d-isabelle-et-jeffrey-saint--0bed1f3f/
+    </guid>
+
+    <pubDate>
+      Fri, 21 Aug 2026 09:30:38 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
   <item>
-    <title>Les 23 meilleurs outils de gestion de sites web en 2026 - Hostinger</title>
-    <link>https://news.google.com/rss/articles/CBMiekFVX3lxTE5WS1FQQVJsSUZVYzA1LTVKN1ljZTMtcUdyWmh4X3piVlAybWoxTmVxNDlWdVJLa2NLa0JqaVdsWDlVWnYtaDlnVjRGbldhVFU5LV9UR2tFaTdRT2ExNmhuRlFycy0zOGZxMFFHdDZDSEJmbVJFS0RsYXl3?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMiekFVX3lxTE5WS1FQQVJsSUZVYzA1LTVKN1ljZTMtcUdyWmh4X3piVlAybWoxTmVxNDlWdVJLa2NLa0JqaVdsWDlVWnYtaDlnVjRGbldhVFU5LV9UR2tFaTdRT2ExNmhuRlFycy0zOGZxMFFHdDZDSEJmbVJFS0RsYXl3?oc=5</guid>
-    <pubDate>Thu, 20 Aug 2026 07:00:00 +0000</pubDate>
-    <description>Hostinger</description>
+
+    <title>
+      Les 23 meilleurs outils de gestion de sites web en 2026 - Hostinger
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/les-23-meilleurs-outils-de-gestion-de-sites-web-en-2026-hostinger-1db08869/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/les-23-meilleurs-outils-de-gestion-de-sites-web-en-2026-hostinger-1db08869/
+    </guid>
+
+    <pubDate>
+      Thu, 20 Aug 2026 07:00:00 +0000
+    </pubDate>
+
+    <description>
+      Hostinger
+    </description>
+
   </item>
 
   <item>
-    <title>Google lance l&#x27;August 2026 spam update, positions, trafic organique, visibilité, ce que les sites doivent surveiller - placesdaffaires.com</title>
-    <link>https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSDh3Sm5nRWtFakowenI5bU9KemRTdDhxUnQwQ2Q5UUR6YjFPWDJRTkVvZ1BhaVpqSFN0ME16SnlkdEo4eHpXWTJrcUJZQmZqenR2NWt0Z0VGbnRkdzlsNVY3WFEta1R5aDRYeE1naXl6S093QXYwZnNneXRrNnRsQkUwcm5ZUkdGUDY3azVwZUNZRUt0UXV6T0tlZVQ2aDFwU1F2SktXaFlUSkJlZ0xlU2lCcTFEc0ljanJya1B2QmZkRmZXMndxcFpaT3hwa0x4OFVxNS11emRqaHc1?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSDh3Sm5nRWtFakowenI5bU9KemRTdDhxUnQwQ2Q5UUR6YjFPWDJRTkVvZ1BhaVpqSFN0ME16SnlkdEo4eHpXWTJrcUJZQmZqenR2NWt0Z0VGbnRkdzlsNVY3WFEta1R5aDRYeE1naXl6S093QXYwZnNneXRrNnRsQkUwcm5ZUkdGUDY3azVwZUNZRUt0UXV6T0tlZVQ2aDFwU1F2SktXaFlUSkJlZ0xlU2lCcTFEc0ljanJya1B2QmZkRmZXMndxcFpaT3hwa0x4OFVxNS11emRqaHc1?oc=5</guid>
-    <pubDate>Thu, 20 Aug 2026 05:18:00 +0000</pubDate>
-    <description>placesdaffaires.com</description>
+
+    <title>
+      Google lance l&#x27;August 2026 spam update, positions, trafic organique, visibilité, ce que les sites doivent surveiller - placesdaffaires.com
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/google-lance-l-august-2026-spam-update-positions-trafic-organique-visi-4c841593/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/google-lance-l-august-2026-spam-update-positions-trafic-organique-visi-4c841593/
+    </guid>
+
+    <pubDate>
+      Thu, 20 Aug 2026 05:18:00 +0000
+    </pubDate>
+
+    <description>
+      placesdaffaires.com
+    </description>
+
   </item>
 
   <item>
-    <title>Les réponses AI Overviews baissent le taux de clic jusqu’à 23,1 % en France, selon Ahrefs - Stratégies</title>
-    <link>https://news.google.com/rss/articles/CBMi5AFBVV95cUxOenFKY1pmVGVRNFgxUE44cG1XM2FIbUtEbjg4RHNhWTNRZHJkRkZ0VC1kSnJsRS1BV0dZbUpYSXZLUFJiR2hYOEx5Z2EtZC1GSUxLOENNblJaNDdwNmRHVWpVOXBvYTM0M2ZkUm4yOGRRNUxHZW1MWjdxTDNmenZjbjVlVGhUR2Y0OHZvV2dzTEdDM2tYdEE5bU1OOS1EYXF0OHV4RFRENE9LSDNpLUhZdDhnSjVOTWQzc2Y0UlZmd3hJMFlyYVUxT2QzT0o5cVZjVWtFemVoMzRQRTRCS19BLTBsRVg?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi5AFBVV95cUxOenFKY1pmVGVRNFgxUE44cG1XM2FIbUtEbjg4RHNhWTNRZHJkRkZ0VC1kSnJsRS1BV0dZbUpYSXZLUFJiR2hYOEx5Z2EtZC1GSUxLOENNblJaNDdwNmRHVWpVOXBvYTM0M2ZkUm4yOGRRNUxHZW1MWjdxTDNmenZjbjVlVGhUR2Y0OHZvV2dzTEdDM2tYdEE5bU1OOS1EYXF0OHV4RFRENE9LSDNpLUhZdDhnSjVOTWQzc2Y0UlZmd3hJMFlyYVUxT2QzT0o5cVZjVWtFemVoMzRQRTRCS19BLTBsRVg?oc=5</guid>
-    <pubDate>Wed, 19 Aug 2026 15:23:20 +0000</pubDate>
-    <description>Stratégies</description>
+
+    <title>
+      Les réponses AI Overviews baissent le taux de clic jusqu’à 23,1 % en France, selon Ahrefs - Stratégies
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/les-r-ponses-ai-overviews-baissent-le-taux-de-clic-jusqu-23-1-en-franc-f4ac61e5/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/les-r-ponses-ai-overviews-baissent-le-taux-de-clic-jusqu-23-1-en-franc-f4ac61e5/
+    </guid>
+
+    <pubDate>
+      Wed, 19 Aug 2026 15:23:20 +0000
+    </pubDate>
+
+    <description>
+      Stratégies
+    </description>
+
   </item>
 
   <item>
-    <title>Google Trends déploie de nouvelles cartes interactives pour visualiser les tendances - blogdumoderateur.com</title>
-    <link>https://news.google.com/rss/articles/CBMikgFBVV95cUxPY3hhNlNKUy1mV3h5a2FRdkdCMmxPR2tZMFFpYUJ5Z0dCM2lVX1M4VGlqdUc2ZjhUZGNvZzhNMFhLWms0M1dpZVFHYlVaX1cxaklONTdyR1dqMUdLV1VVazZGczVwSHhtdWR4UUhRUWxDR3VJQTFvZWdOWmR5dWE4bk1rcGFDSF9CSTY0SGFmUWF6QQ?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMikgFBVV95cUxPY3hhNlNKUy1mV3h5a2FRdkdCMmxPR2tZMFFpYUJ5Z0dCM2lVX1M4VGlqdUc2ZjhUZGNvZzhNMFhLWms0M1dpZVFHYlVaX1cxaklONTdyR1dqMUdLV1VVazZGczVwSHhtdWR4UUhRUWxDR3VJQTFvZWdOWmR5dWE4bk1rcGFDSF9CSTY0SGFmUWF6QQ?oc=5</guid>
-    <pubDate>Wed, 19 Aug 2026 15:00:21 +0000</pubDate>
-    <description>blogdumoderateur.com</description>
+
+    <title>
+      Google Trends déploie de nouvelles cartes interactives pour visualiser les tendances - blogdumoderateur.com
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/google-trends-d-ploie-de-nouvelles-cartes-interactives-pour-visualiser-207b995c/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/google-trends-d-ploie-de-nouvelles-cartes-interactives-pour-visualiser-207b995c/
+    </guid>
+
+    <pubDate>
+      Wed, 19 Aug 2026 15:00:21 +0000
+    </pubDate>
+
+    <description>
+      blogdumoderateur.com
+    </description>
+
   </item>
 
   <item>
-    <title>23 % de taux de clic en moins : les AI Overviews font déjà des dégâts en France - blogdumoderateur.com</title>
-    <link>https://news.google.com/rss/articles/CBMikgFBVV95cUxNQjdMZzJvSUZyZEJSTThoZDdpU3BRUDR2cGhzdW1wQWJmTEdfTjUzaTZRaUN5Vk1jYUJkczBXb2hOaE9kV0FoQVJ1QUFicWJ0UXJrNHNtTjh0YjU4Q2RSRnA1dk91am52MVRRcGpBamR3NUxacmtIcDFkeUNrei1MVlVkYzhFY2kyTjdwd0pvUUtQZw?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMikgFBVV95cUxNQjdMZzJvSUZyZEJSTThoZDdpU3BRUDR2cGhzdW1wQWJmTEdfTjUzaTZRaUN5Vk1jYUJkczBXb2hOaE9kV0FoQVJ1QUFicWJ0UXJrNHNtTjh0YjU4Q2RSRnA1dk91am52MVRRcGpBamR3NUxacmtIcDFkeUNrei1MVlVkYzhFY2kyTjdwd0pvUUtQZw?oc=5</guid>
-    <pubDate>Wed, 19 Aug 2026 13:26:32 +0000</pubDate>
-    <description>blogdumoderateur.com</description>
+
+    <title>
+      23 % de taux de clic en moins : les AI Overviews font déjà des dégâts en France - blogdumoderateur.com
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/23-de-taux-de-clic-en-moins-les-ai-overviews-font-d-j-des-d-g-ts-en-fr-2660de5c/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/23-de-taux-de-clic-en-moins-les-ai-overviews-font-d-j-des-d-g-ts-en-fr-2660de5c/
+    </guid>
+
+    <pubDate>
+      Wed, 19 Aug 2026 13:26:32 +0000
+    </pubDate>
+
+    <description>
+      blogdumoderateur.com
+    </description>
+
   </item>
 
   <item>
-    <title>La villa des cœurs brisés : la date de lancement dévoilée, quelques changements sont à prévoir - Télé Star</title>
-    <link>https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZ0ZWOWNtb0N2a2FOSVFuRUU3Um9uMHdJOE8zTjM4OThTOHZSTlJra29JR0RURG92Tk90RVdHTEFNaDJVVllfTnpSQWRONFZEbk9uUTh1cWxoZVFFeVVRbzdpczgzUWFsaUhyNVU5SVJiY09ZNmdIZ3VmTmxXSEQ2cEszZTdyYjdveURCQlhuTXdMNVF1VXlrQUR5bnA3T3l2VnZUZVhoeWNtbDg3bkVkbVBxTF9YckxPSFdvN2swU0h6Q3J4XzlLWktWbEhpdzljQ3BTSHo2dEFHQWVCZkhPWjI2dUtybl9fdEV4dlN3?oc=5</link>
-    <guid isPermaLink="false">https://news.google.com/rss/articles/CBMi7gFBVV95cUxNZ0ZWOWNtb0N2a2FOSVFuRUU3Um9uMHdJOE8zTjM4OThTOHZSTlJra29JR0RURG92Tk90RVdHTEFNaDJVVllfTnpSQWRONFZEbk9uUTh1cWxoZVFFeVVRbzdpczgzUWFsaUhyNVU5SVJiY09ZNmdIZ3VmTmxXSEQ2cEszZTdyYjdveURCQlhuTXdMNVF1VXlrQUR5bnA3T3l2VnZUZVhoeWNtbDg3bkVkbVBxTF9YckxPSFdvN2swU0h6Q3J4XzlLWktWbEhpdzljQ3BTSHo2dEFHQWVCZkhPWjI2dUtybl9fdEV4dlN3?oc=5</guid>
-    <pubDate>Wed, 19 Aug 2026 09:30:06 +0000</pubDate>
-    <description>Télé Star</description>
+
+    <title>
+      La villa des cœurs brisés : la date de lancement dévoilée, quelques changements sont à prévoir - Télé Star
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/fr/news/la-villa-des-c-urs-bris-s-la-date-de-lancement-d-voil-e-quelques-chang-081a0ec2/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/fr/news/la-villa-des-c-urs-bris-s-la-date-de-lancement-d-voil-e-quelques-chang-081a0ec2/
+    </guid>
+
+    <pubDate>
+      Wed, 19 Aug 2026 09:30:06 +0000
+    </pubDate>
+
+    <description>
+      Télé Star
+    </description>
+
   </item>
 
 
 </channel>
+
 </rss>
