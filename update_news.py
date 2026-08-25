@@ -10,7 +10,6 @@ MAX_NEWS = 30
 MAX_AGE_DAYS = 7
 
 CONFIGS = {
-
     "de": {
         "output": "de/index.html",
         "hl": "de",
@@ -144,7 +143,6 @@ CONFIGS = {
     }
 }
 
-
 BLOCKED_TERMS = [
     "k-pop",
     "actor",
@@ -163,10 +161,7 @@ BLOCKED_TERMS = [
 
 
 def get_feed_url(query, config):
-
-    encoded_query = urllib.parse.quote(
-        query + " when:7d"
-    )
+    encoded_query = urllib.parse.quote(query + " when:7d")
 
     return (
         "https://news.google.com/rss/search?"
@@ -178,77 +173,40 @@ def get_feed_url(query, config):
 
 
 def load_feed(url):
-
     request = urllib.request.Request(
         url,
-        headers={
-            "User-Agent": "Mozilla/5.0"
-        }
+        headers={"User-Agent": "Mozilla/5.0"}
     )
 
-    with urllib.request.urlopen(
-        request,
-        timeout=20
-    ) as response:
-
+    with urllib.request.urlopen(request, timeout=20) as response:
         return response.read()
 
 
 def parse_feed(xml_data):
-
     root = ET.fromstring(xml_data)
-
     articles = []
 
-    cutoff = (
-        datetime.now(timezone.utc)
-        - timedelta(days=MAX_AGE_DAYS)
-    )
+    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
 
     for item in root.findall(".//item"):
-
-        title = item.findtext(
-            "title",
-            ""
-        ).strip()
-
-        link = item.findtext(
-            "link",
-            ""
-        ).strip()
-
-        pub_date = item.findtext(
-            "pubDate",
-            ""
-        ).strip()
-
-        source = item.findtext(
-            "source",
-            ""
-        ).strip()
+        title = item.findtext("title", "").strip()
+        link = item.findtext("link", "").strip()
+        pub_date = item.findtext("pubDate", "").strip()
+        source = item.findtext("source", "").strip()
 
         if not title or not link or not pub_date:
             continue
 
         title_lower = title.lower()
 
-        if any(
-            term in title_lower
-            for term in BLOCKED_TERMS
-        ):
+        if any(term in title_lower for term in BLOCKED_TERMS):
             continue
 
         try:
-
-            date = parsedate_to_datetime(
-                pub_date
-            )
+            date = parsedate_to_datetime(pub_date)
 
             if date.tzinfo is None:
-
-                date = date.replace(
-                    tzinfo=timezone.utc
-                )
+                date = date.replace(tzinfo=timezone.utc)
 
             if date < cutoff:
                 continue
@@ -267,75 +225,42 @@ def parse_feed(xml_data):
 
 
 def collect_news(config):
-
     all_articles = []
 
     for query in config["searches"]:
-
-        print(
-            f"Searching: {query}"
-        )
+        print(f"Searching: {query}")
 
         try:
+            url = get_feed_url(query, config)
+            xml_data = load_feed(url)
+            articles = parse_feed(xml_data)
+            all_articles.extend(articles)
 
-            url = get_feed_url(
-                query,
-                config
-            )
-
-            xml_data = load_feed(
-                url
-            )
-
-            articles = parse_feed(
-                xml_data
-            )
-
-            all_articles.extend(
-                articles
-            )
-
-            print(
-                f"{len(articles)} articles found."
-            )
+            print(f"{len(articles)} articles found.")
 
         except Exception as error:
-
-            print(
-                f"Error for {query}: {error}"
-            )
+            print(f"Error for {query}: {error}")
 
     return all_articles
 
 
 def remove_duplicates(articles):
-
     unique = []
-
     seen = set()
 
     for article in articles:
-
-        key = (
-            article["title"]
-            .lower()
-            .strip()
-        )
+        key = article["title"].lower().strip()
 
         if key in seen:
             continue
 
         seen.add(key)
-
-        unique.append(
-            article
-        )
+        unique.append(article)
 
     return unique
 
 
 def language_menu():
-
     return """
 <a href="/">HOME</a> |
 <a href="/de/">DE</a> |
@@ -347,40 +272,39 @@ def language_menu():
 """
 
 
-def generate_page(language, config):
+def hreflang_tags():
+    tags = ""
 
-    articles = collect_news(
-        config
+    for language in CONFIGS.keys():
+        tags += (
+            f'<link rel="alternate" hreflang="{language}" '
+            f'href="https://news.seoschweiz.net/{language}/">\n'
+        )
+
+    tags += (
+        '<link rel="alternate" hreflang="x-default" '
+        'href="https://news.seoschweiz.net/">\n'
     )
+
+    return tags
+
+
+def generate_page(language, config):
+    articles = collect_news(config)
 
     articles.sort(
         key=lambda article: article["date"],
         reverse=True
     )
 
-    articles = remove_duplicates(
-        articles
-    )
-
-    articles = articles[
-        :MAX_NEWS
-    ]
+    articles = remove_duplicates(articles)
+    articles = articles[:MAX_NEWS]
 
     news_html = ""
 
     for article in articles:
-
-        source = (
-            article["source"]
-            or "Google News"
-        )
-
-        date_text = (
-            article["date"]
-            .strftime(
-                "%d.%m.%Y %H:%M"
-            )
-        )
+        source = article["source"] or "Google News"
+        date_text = article["date"].strftime("%d.%m.%Y %H:%M")
 
         news_html += f"""
 <article class="news-item">
@@ -408,32 +332,18 @@ rel="noopener noreferrer">
 """
 
     if not articles:
-
         news_html = f"""
 <article class="news-item">
-
-<h2>
-{config['empty']}
-</h2>
-
-<p>
-{config['empty_text']}
-</p>
-
+<h2>{config['empty']}</h2>
+<p>{config['empty_text']}</p>
 </article>
 """
 
-    updated = (
-        datetime.now(timezone.utc)
-        .strftime(
-            "%d.%m.%Y %H:%M UTC"
-        )
+    updated = datetime.now(timezone.utc).strftime(
+        "%d.%m.%Y %H:%M UTC"
     )
 
-    canonical = (
-        "https://news.seoschweiz.net/"
-        f"{language}/"
-    )
+    canonical = f"https://news.seoschweiz.net/{language}/"
 
     html = f"""<!DOCTYPE html>
 <html lang="{language}">
@@ -455,6 +365,8 @@ content="index, follow">
 
 <link rel="canonical"
 href="{canonical}">
+
+{hreflang_tags()}
 
 <style>
 
@@ -564,13 +476,9 @@ footer a {{
 
 <header>
 
-<h1>
-{config['title']}
-</h1>
+<h1>{config['title']}</h1>
 
-<p>
-{config['subtitle']}
-</p>
+<p>{config['subtitle']}</p>
 
 <div class="languages">
 {language_menu()}
@@ -583,10 +491,7 @@ footer a {{
 {news_html}
 
 <div class="updated">
-
-{config['updated']}
-{updated}
-
+{config['updated']} {updated}
 </div>
 
 </main>
@@ -602,48 +507,34 @@ SeoSchweiz.net
 </footer>
 
 </body>
-
 </html>
 """
 
-    output_dir = os.path.dirname(
-        config["output"]
-    )
+    output_dir = os.path.dirname(config["output"])
 
     if output_dir:
-
-        os.makedirs(
-            output_dir,
-            exist_ok=True
-        )
+        os.makedirs(output_dir, exist_ok=True)
 
     with open(
         config["output"],
         "w",
         encoding="utf-8"
     ) as file:
-
-        file.write(
-            html
-        )
+        file.write(html)
 
     print(
-        f"{language}: "
-        f"{len(articles)} articles published."
+        f"{language}: {len(articles)} articles published."
     )
 
 
 def generate_sitemap():
-
     urls = [
         "https://news.seoschweiz.net/"
     ]
 
     for language in CONFIGS.keys():
-
         urls.append(
-            "https://news.seoschweiz.net/"
-            f"{language}/"
+            f"https://news.seoschweiz.net/{language}/"
         )
 
     sitemap = """<?xml version="1.0" encoding="UTF-8"?>
@@ -651,7 +542,6 @@ def generate_sitemap():
 """
 
     for url in urls:
-
         sitemap += f"""  <url>
     <loc>{url}</loc>
   </url>
@@ -664,10 +554,7 @@ def generate_sitemap():
         "w",
         encoding="utf-8"
     ) as file:
-
-        file.write(
-            sitemap
-        )
+        file.write(sitemap)
 
     print(
         f"Sitemap generated with {len(urls)} URLs."
@@ -675,21 +562,12 @@ def generate_sitemap():
 
 
 def main():
-
     for language, config in CONFIGS.items():
-
-        print(
-            f"\n--- Updating {language} ---"
-        )
-
-        generate_page(
-            language,
-            config
-        )
+        print(f"\n--- Updating {language} ---")
+        generate_page(language, config)
 
     generate_sitemap()
 
 
 if __name__ == "__main__":
-
     main()
