@@ -1,13 +1,14 @@
 import urllib.request
 import xml.etree.ElementTree as ET
 from html import escape
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
 RSS_URL = "https://news.google.com/rss/search?q=SEO+Google+Suchmaschinenoptimierung&hl=de&gl=DE&ceid=DE:de"
 
 OUTPUT_FILE = "de/index.html"
 MAX_NEWS = 30
+MAX_AGE_DAYS = 7
 
 
 def load_feed():
@@ -25,20 +26,31 @@ def parse_feed(xml_data):
 
     articles = []
 
-    for item in root.findall(".//item")[:MAX_NEWS]:
+    cutoff_date = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+
+    for item in root.findall(".//item"):
+
         title = item.findtext("title", "").strip()
         link = item.findtext("link", "").strip()
         pub_date = item.findtext("pubDate", "").strip()
         source = item.findtext("source", "").strip()
 
-        if pub_date:
-            try:
-                date = parsedate_to_datetime(pub_date)
-                date_text = date.strftime("%d.%m.%Y %H:%M")
-            except Exception:
-                date_text = pub_date
-        else:
-            date_text = ""
+        if not title or not link or not pub_date:
+            continue
+
+        try:
+            date = parsedate_to_datetime(pub_date)
+
+            if date.tzinfo is None:
+                date = date.replace(tzinfo=timezone.utc)
+
+            if date < cutoff_date:
+                continue
+
+            date_text = date.strftime("%d.%m.%Y %H:%M")
+
+        except Exception:
+            continue
 
         articles.append({
             "title": title,
@@ -46,6 +58,9 @@ def parse_feed(xml_data):
             "date": date_text,
             "source": source
         })
+
+        if len(articles) >= MAX_NEWS:
+            break
 
     return articles
 
@@ -83,7 +98,7 @@ def generate_html(articles):
         </article>
         """
 
-    updated = datetime.utcnow().strftime("%d.%m.%Y %H:%M UTC")
+    updated = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
 
     html = f"""<!DOCTYPE html>
 <html lang="de">
@@ -100,8 +115,7 @@ content="width=device-width, initial-scale=1.0">
 <meta name="description"
 content="Aktuelle SEO News über Google, Bing, Suchmaschinenoptimierung, Algorithmus Updates, AI Search, Keywords, Backlinks und digitales Marketing.">
 
-<meta name="robots"
-content="index, follow">
+<meta name="robots" content="index, follow">
 
 <link rel="canonical"
 href="https://news.seoschweiz.net/de/">
@@ -109,105 +123,104 @@ href="https://news.seoschweiz.net/de/">
 <style>
 
 * {{
-box-sizing: border-box;
+  box-sizing: border-box;
 }}
 
 body {{
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f5f5f5;
-color: #222;
-line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
 }}
 
 header {{
-background: #111;
-color: white;
-padding: 60px 20px;
-text-align: center;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }}
 
 header h1 {{
-font-size: 44px;
-margin: 0 0 10px;
+  font-size: 44px;
+  margin: 0 0 10px;
 }}
 
 header p {{
-font-size: 19px;
+  font-size: 19px;
 }}
 
 .home {{
-margin-top: 20px;
+  margin-top: 20px;
 }}
 
 .home a {{
-color: white;
-text-decoration: none;
-font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }}
 
 .container {{
-max-width: 1000px;
-margin: auto;
-padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
 }}
 
 .news-item {{
-background: white;
-padding: 25px;
-margin-bottom: 20px;
-border-radius: 10px;
-box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }}
 
 .news-item h2 {{
-margin-top: 0;
-font-size: 22px;
+  margin-top: 0;
+  font-size: 22px;
 }}
 
 .news-item h2 a {{
-color: #222;
-text-decoration: none;
+  color: #222;
+  text-decoration: none;
 }}
 
 .news-item h2 a:hover {{
-color: #c00000;
+  color: #c00000;
 }}
 
 .source {{
-font-size: 14px;
-color: #777;
+  font-size: 14px;
+  color: #777;
 }}
 
 .read-more {{
-color: #c00000;
-text-decoration: none;
-font-weight: bold;
+  color: #c00000;
+  text-decoration: none;
+  font-weight: bold;
 }}
 
 .updated {{
-text-align: center;
-color: #777;
-margin: 35px 0;
-font-size: 14px;
+  text-align: center;
+  color: #777;
+  margin: 35px 0;
+  font-size: 14px;
 }}
 
 footer {{
-background: #111;
-color: #aaa;
-text-align: center;
-padding: 30px;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 30px;
 }}
 
 footer a {{
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }}
 
 </style>
 
 </head>
-
 
 <body>
 
@@ -228,7 +241,6 @@ AI Search und digitales Marketing.
 
 </header>
 
-
 <main class="container">
 
 {news_html}
@@ -239,11 +251,9 @@ Letztes automatisches Update: {updated}
 
 </main>
 
-
 <footer>
 
 SEO News by
-
 <a href="https://www.seoschweiz.net/">
 SeoSchweiz.net
 </a>
@@ -266,7 +276,7 @@ def main():
 
     generate_html(articles)
 
-    print(f"{len(articles)} News-Artikel aktualisiert.")
+    print(f"{len(articles)} aktuelle News-Artikel veröffentlicht.")
 
 
 if __name__ == "__main__":
