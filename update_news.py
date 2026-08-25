@@ -234,7 +234,6 @@ def collect_news(config):
             url = get_feed_url(query, config)
             xml_data = load_feed(url)
             articles = parse_feed(xml_data)
-
             all_articles.extend(articles)
 
             print(f"{len(articles)} articles found.")
@@ -288,6 +287,28 @@ def hreflang_tags():
     )
 
     return tags
+
+
+def internal_topic_link(language):
+    if language == "de":
+        return """
+<section class="topic-link">
+
+<h2>Google SEO News</h2>
+
+<p>
+Du möchtest gezielt Nachrichten über Google Search,
+Google Algorithmus Updates und Suchmaschinenoptimierung verfolgen?
+</p>
+
+<a href="/de/google-seo-news/">
+Google SEO News & aktuelle Google Updates ansehen →
+</a>
+
+</section>
+"""
+
+    return ""
 
 
 def generate_page(language, config):
@@ -417,6 +438,24 @@ header p {{
   padding: 50px 20px;
 }}
 
+.topic-link {{
+  background: white;
+  padding: 28px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+}}
+
+.topic-link h2 {{
+  margin-top: 0;
+}}
+
+.topic-link a {{
+  color: #c00000;
+  font-weight: bold;
+  text-decoration: none;
+}}
+
 .news-item {{
   background: white;
   padding: 25px;
@@ -489,6 +528,8 @@ footer a {{
 
 <main class="container">
 
+{internal_topic_link(language)}
+
 {news_html}
 
 <div class="updated">
@@ -528,7 +569,6 @@ SeoSchweiz.net
 
 
 def generate_sitemap():
-
     urls = [
         "https://news.seoschweiz.net/",
         "https://news.seoschweiz.net/de/google-seo-news/"
@@ -564,7 +604,6 @@ def generate_sitemap():
 
 
 def main():
-
     for language, config in CONFIGS.items():
         print(f"\n--- Updating {language} ---")
         generate_page(language, config)
