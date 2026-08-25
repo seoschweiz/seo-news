@@ -4,13 +4,21 @@
 
 <channel>
 
-<title>Notícias SEO Português</title>
+<title>
+Notícias SEO Português
+</title>
 
-<link>https://news.seoschweiz.net/pt/</link>
+<link>
+https://news.seoschweiz.net/pt/
+</link>
 
-<description>Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA.</description>
+<description>
+Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA.
+</description>
 
-<language>pt</language>
+<language>
+pt
+</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"

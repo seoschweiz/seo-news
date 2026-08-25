@@ -4,13 +4,21 @@
 
 <channel>
 
-<title>Actualités SEO Français</title>
+<title>
+Actualités SEO Français
+</title>
 
-<link>https://news.seoschweiz.net/fr/</link>
+<link>
+https://news.seoschweiz.net/fr/
+</link>
 
-<description>Actualités SEO en français sur Google, le référencement, les algorithmes et la recherche IA.</description>
+<description>
+Actualités SEO en français sur Google, le référencement, les algorithmes et la recherche IA.
+</description>
 
-<language>fr</language>
+<language>
+fr
+</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"

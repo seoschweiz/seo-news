@@ -4,13 +4,21 @@
 
 <channel>
 
-<title>Notizie SEO Italiano</title>
+<title>
+Notizie SEO Italiano
+</title>
 
-<link>https://news.seoschweiz.net/it/</link>
+<link>
+https://news.seoschweiz.net/it/
+</link>
 
-<description>Notizie SEO in italiano su Google, ottimizzazione, algoritmi e AI Search.</description>
+<description>
+Notizie SEO in italiano su Google, ottimizzazione, algoritmi e AI Search.
+</description>
 
-<language>it</language>
+<language>
+it
+</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
