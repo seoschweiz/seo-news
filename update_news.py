@@ -234,6 +234,7 @@ def collect_news(config):
             url = get_feed_url(query, config)
             xml_data = load_feed(url)
             articles = parse_feed(xml_data)
+
             all_articles.extend(articles)
 
             print(f"{len(articles)} articles found.")
@@ -499,7 +500,6 @@ footer a {{
 <footer>
 
 SEO News by
-
 <a href="https://www.seoschweiz.net/">
 SeoSchweiz.net
 </a>
@@ -528,8 +528,10 @@ SeoSchweiz.net
 
 
 def generate_sitemap():
+
     urls = [
-        "https://news.seoschweiz.net/"
+        "https://news.seoschweiz.net/",
+        "https://news.seoschweiz.net/de/google-seo-news/"
     ]
 
     for language in CONFIGS.keys():
@@ -562,6 +564,7 @@ def generate_sitemap():
 
 
 def main():
+
     for language, config in CONFIGS.items():
         print(f"\n--- Updating {language} ---")
         generate_page(language, config)
