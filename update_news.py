@@ -5,28 +5,65 @@ from html import escape
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
-OUTPUT_FILE = "de/index.html"
 MAX_NEWS = 30
 MAX_AGE_DAYS = 7
 
-SEARCHES = [
-    "SEO",
-    "Google Search",
-    "Google Algorithm",
-    "Suchmaschinenoptimierung",
-    "AI Search"
-]
+CONFIGS = {
+    "de": {
+        "output": "de/index.html",
+        "hl": "de",
+        "gl": "DE",
+        "ceid": "DE:de",
+        "searches": [
+            "SEO",
+            "Google Search",
+            "Google Algorithm",
+            "Suchmaschinenoptimierung",
+            "AI Search"
+        ],
+        "title": "Aktuelle SEO News",
+        "subtitle": "Google, Suchmaschinenoptimierung, Algorithmus Updates, AI Search und digitales Marketing.",
+        "meta_title": "Aktuelle SEO News | Google, Bing & Suchmaschinenoptimierung",
+        "meta_description": "Aktuelle SEO News über Google, Bing, Suchmaschinenoptimierung, Google Updates, AI Search, Keywords, Backlinks und digitales Marketing.",
+        "read_more": "Artikel lesen →",
+        "updated": "Letztes automatisches Update:",
+        "empty": "Momentan keine aktuellen SEO News gefunden",
+        "empty_text": "Beim nächsten automatischen Update wird erneut gesucht."
+    },
+
+    "en": {
+        "output": "en/index.html",
+        "hl": "en",
+        "gl": "US",
+        "ceid": "US:en",
+        "searches": [
+            "SEO",
+            "Google Search",
+            "Google Algorithm Update",
+            "Search Engine Optimization",
+            "AI Search"
+        ],
+        "title": "Latest SEO News",
+        "subtitle": "Google Search, SEO, algorithm updates, AI Search and digital marketing.",
+        "meta_title": "Latest SEO News | Google Search, SEO & AI Search",
+        "meta_description": "Latest SEO news about Google Search, algorithm updates, AI Search, search engine optimization, keywords, backlinks and digital marketing.",
+        "read_more": "Read article →",
+        "updated": "Last automatic update:",
+        "empty": "No recent SEO news found",
+        "empty_text": "The system will search again during the next automatic update."
+    }
+}
 
 
-def get_feed_url(query):
+def get_feed_url(query, config):
     encoded_query = urllib.parse.quote(query + " when:7d")
 
     return (
         "https://news.google.com/rss/search?"
         f"q={encoded_query}"
-        "&hl=de"
-        "&gl=DE"
-        "&ceid=DE:de"
+        f"&hl={config['hl']}"
+        f"&gl={config['gl']}"
+        f"&ceid={config['ceid']}"
     )
 
 
@@ -36,7 +73,7 @@ def load_feed(url):
         headers={"User-Agent": "Mozilla/5.0"}
     )
 
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=20) as response:
         return response.read()
 
 
@@ -45,7 +82,7 @@ def parse_feed(xml_data):
 
     articles = []
 
-    cutoff_date = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
 
     for item in root.findall(".//item"):
 
@@ -63,7 +100,7 @@ def parse_feed(xml_data):
             if date.tzinfo is None:
                 date = date.replace(tzinfo=timezone.utc)
 
-            if date < cutoff_date:
+            if date < cutoff:
                 continue
 
         except Exception:
@@ -79,25 +116,25 @@ def parse_feed(xml_data):
     return articles
 
 
-def collect_news():
+def collect_news(config):
 
     all_articles = []
 
-    for query in SEARCHES:
+    for query in config["searches"]:
 
-        print(f"Suche News für: {query}")
+        print(f"Searching: {query}")
 
         try:
-            url = get_feed_url(query)
+            url = get_feed_url(query, config)
             xml_data = load_feed(url)
             articles = parse_feed(xml_data)
 
             all_articles.extend(articles)
 
-            print(f"{len(articles)} Artikel gefunden.")
+            print(f"{len(articles)} articles found.")
 
         except Exception as error:
-            print(f"Fehler bei {query}: {error}")
+            print(f"Error for {query}: {error}")
 
     return all_articles
 
@@ -105,82 +142,84 @@ def collect_news():
 def remove_duplicates(articles):
 
     unique = []
-    seen_titles = set()
+    seen = set()
 
     for article in articles:
 
-        title_key = article["title"].lower().strip()
+        key = article["title"].lower().strip()
 
-        if title_key in seen_titles:
+        if key in seen:
             continue
 
-        seen_titles.add(title_key)
+        seen.add(key)
         unique.append(article)
 
     return unique
 
 
-def generate_html(articles):
+def generate_page(language, config):
+
+    articles = collect_news(config)
 
     articles.sort(
         key=lambda article: article["date"],
         reverse=True
     )
 
-    articles = remove_duplicates(articles)
-
-    articles = articles[:MAX_NEWS]
+    articles = remove_duplicates(articles)[:MAX_NEWS]
 
     news_html = ""
 
     for article in articles:
 
-        source_text = article["source"] or "Google News"
+        source = article["source"] or "Google News"
 
-        date_text = article["date"].strftime(
-            "%d.%m.%Y %H:%M"
-        )
+        date_text = article["date"].strftime("%d.%m.%Y %H:%M")
 
         news_html += f"""
-        <article class="news-item">
+<article class="news-item">
 
-          <h2>
-            <a href="{escape(article['link'])}"
-               target="_blank"
-               rel="noopener noreferrer">
-              {escape(article['title'])}
-            </a>
-          </h2>
+<h2>
+<a href="{escape(article['link'])}"
+target="_blank"
+rel="noopener noreferrer">
+{escape(article['title'])}
+</a>
+</h2>
 
-          <p class="source">
-            {escape(source_text)} · {escape(date_text)}
-          </p>
+<p class="source">
+{escape(source)} · {escape(date_text)}
+</p>
 
-          <a class="read-more"
-             href="{escape(article['link'])}"
-             target="_blank"
-             rel="noopener noreferrer">
-            Artikel lesen →
-          </a>
+<a class="read-more"
+href="{escape(article['link'])}"
+target="_blank"
+rel="noopener noreferrer">
+{config['read_more']}
+</a>
 
-        </article>
-        """
+</article>
+"""
 
     if not articles:
 
-        news_html = """
-        <article class="news-item">
-          <h2>Momentan keine aktuellen SEO News gefunden</h2>
-          <p>Beim nächsten automatischen Update wird erneut gesucht.</p>
-        </article>
-        """
+        news_html = f"""
+<article class="news-item">
+<h2>{config['empty']}</h2>
+<p>{config['empty_text']}</p>
+</article>
+"""
 
     updated = datetime.now(timezone.utc).strftime(
         "%d.%m.%Y %H:%M UTC"
     )
 
+    canonical = (
+        f"https://news.seoschweiz.net/{language}/"
+    )
+
     html = f"""<!DOCTYPE html>
-<html lang="de">
+<html lang="{language}">
 
 <head>
 
@@ -189,113 +228,114 @@ def generate_html(articles):
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Aktuelle SEO News | Google, Bing & Suchmaschinenoptimierung</title>
+<title>{config['meta_title']}</title>
 
 <meta name="description"
-content="Aktuelle SEO News über Google, Bing, Suchmaschinenoptimierung, Google Updates, AI Search, Keywords, Backlinks und digitales Marketing.">
+content="{config['meta_description']}">
 
 <meta name="robots"
 content="index, follow">
 
 <link rel="canonical"
-href="https://news.seoschweiz.net/de/">
+href="{canonical}">
 
 <style>
 
 * {{
-  box-sizing: border-box;
+box-sizing: border-box;
 }}
 
 body {{
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
-  line-height: 1.6;
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f5f5f5;
+color: #222;
+line-height: 1.6;
 }}
 
 header {{
-  background: #111;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+background: #111;
+color: white;
+padding: 60px 20px;
+text-align: center;
 }}
 
 header h1 {{
-  font-size: 44px;
-  margin: 0 0 10px;
+font-size: 44px;
+margin: 0 0 10px;
 }}
 
 header p {{
-  font-size: 19px;
+font-size: 19px;
 }}
 
-.home {{
-  margin-top: 20px;
+.languages {{
+margin-top: 20px;
 }}
 
-.home a {{
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.languages a {{
+color: white;
+font-weight: bold;
+text-decoration: none;
+margin: 0 7px;
 }}
 
 .container {{
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px 20px;
+max-width: 1000px;
+margin: auto;
+padding: 50px 20px;
 }}
 
 .news-item {{
-  background: white;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+background: white;
+padding: 25px;
+margin-bottom: 20px;
+border-radius: 10px;
+box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }}
 
 .news-item h2 {{
-  margin-top: 0;
-  font-size: 22px;
+margin-top: 0;
+font-size: 22px;
 }}
 
 .news-item h2 a {{
-  color: #222;
-  text-decoration: none;
+color: #222;
+text-decoration: none;
 }}
 
 .news-item h2 a:hover {{
-  color: #c00000;
+color: #c00000;
 }}
 
 .source {{
-  font-size: 14px;
-  color: #777;
+font-size: 14px;
+color: #777;
 }}
 
 .read-more {{
-  color: #c00000;
-  text-decoration: none;
-  font-weight: bold;
+color: #c00000;
+text-decoration: none;
+font-weight: bold;
 }}
 
 .updated {{
-  text-align: center;
-  color: #777;
-  margin: 35px 0;
-  font-size: 14px;
+text-align: center;
+color: #777;
+margin: 35px 0;
+font-size: 14px;
 }}
 
 footer {{
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 30px;
+background: #111;
+color: #aaa;
+text-align: center;
+padding: 30px;
 }}
 
 footer a {{
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }}
 
 </style>
@@ -306,17 +346,18 @@ footer a {{
 
 <header>
 
-<h1>Aktuelle SEO News</h1>
+<h1>{config['title']}</h1>
 
 <p>
-Google, Suchmaschinenoptimierung,
-Algorithmus Updates, AI Search und digitales Marketing.
+{config['subtitle']}
 </p>
 
-<div class="home">
-<a href="https://news.seoschweiz.net/">
-← SEO News International
-</a>
+<div class="languages">
+
+<a href="/">HOME</a> |
+<a href="/de/">DE</a> |
+<a href="/en/">EN</a>
+
 </div>
 
 </header>
@@ -326,7 +367,7 @@ Algorithmus Updates, AI Search und digitales Marketing.
 {news_html}
 
 <div class="updated">
-Letztes automatisches Update: {updated}
+{config['updated']} {updated}
 </div>
 
 </main>
@@ -341,11 +382,12 @@ SeoSchweiz.net
 </footer>
 
 </body>
+
 </html>
 """
 
     with open(
-        OUTPUT_FILE,
+        config["output"],
         "w",
         encoding="utf-8"
     ) as file:
@@ -353,15 +395,14 @@ SeoSchweiz.net
         file.write(html)
 
     print(
-        f"{len(articles)} aktuelle News veröffentlicht."
+        f"{language}: {len(articles)} articles published."
     )
 
 
 def main():
 
-    articles = collect_news()
-
-    generate_html(articles)
+    for language, config in CONFIGS.items():
+        generate_page(language, config)
 
 
 if __name__ == "__main__":
