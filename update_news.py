@@ -26,7 +26,6 @@ CONFIGS = {
         "hl": "de",
         "gl": "DE",
         "ceid": "DE:de",
-
         "searches": [
             '"SEO Google"',
             '"Suchmaschinenoptimierung Google"',
@@ -34,7 +33,6 @@ CONFIGS = {
             '"Google Algorithm SEO"',
             '"SEO Marketing"'
         ],
-
         "title": "Aktuelle SEO News",
         "subtitle": "Google, Suchmaschinenoptimierung, Algorithmus Updates, AI Search und digitales Marketing.",
         "meta_title": "Aktuelle SEO News | Google, Bing & Suchmaschinenoptimierung",
@@ -57,7 +55,6 @@ CONFIGS = {
         "hl": "en",
         "gl": "US",
         "ceid": "US:en",
-
         "searches": [
             '"SEO Google"',
             '"Search Engine Optimization"',
@@ -65,7 +62,6 @@ CONFIGS = {
             '"Google algorithm SEO"',
             '"AI Search SEO"'
         ],
-
         "title": "Latest SEO News",
         "subtitle": "Google Search, SEO, algorithm updates, AI Search and digital marketing.",
         "meta_title": "Latest SEO News | Google Search, SEO & AI Search",
@@ -88,7 +84,6 @@ CONFIGS = {
         "hl": "fr",
         "gl": "FR",
         "ceid": "FR:fr",
-
         "searches": [
             '"SEO Google"',
             '"référencement Google"',
@@ -96,7 +91,6 @@ CONFIGS = {
             '"algorithme Google SEO"',
             '"marketing SEO"'
         ],
-
         "title": "Actualités SEO",
         "subtitle": "Google, référencement naturel, mises à jour des algorithmes, recherche IA et marketing digital.",
         "meta_title": "Actualités SEO | Google, Référencement & Recherche IA",
@@ -119,7 +113,6 @@ CONFIGS = {
         "hl": "it",
         "gl": "IT",
         "ceid": "IT:it",
-
         "searches": [
             '"SEO Google"',
             '"ottimizzazione SEO"',
@@ -127,7 +120,6 @@ CONFIGS = {
             '"algoritmo Google SEO"',
             '"marketing SEO"'
         ],
-
         "title": "Notizie SEO",
         "subtitle": "Google, ottimizzazione per i motori di ricerca, aggiornamenti degli algoritmi, AI Search e marketing digitale.",
         "meta_title": "Notizie SEO | Google, Motori di Ricerca & AI Search",
@@ -150,7 +142,6 @@ CONFIGS = {
         "hl": "es",
         "gl": "ES",
         "ceid": "ES:es",
-
         "searches": [
             '"SEO Google"',
             '"posicionamiento SEO"',
@@ -158,7 +149,6 @@ CONFIGS = {
             '"algoritmo Google SEO"',
             '"marketing SEO"'
         ],
-
         "title": "Noticias SEO",
         "subtitle": "Google, posicionamiento web, actualizaciones de algoritmos, búsqueda con IA y marketing digital.",
         "meta_title": "Noticias SEO | Google, Posicionamiento & Búsqueda IA",
@@ -181,7 +171,6 @@ CONFIGS = {
         "hl": "pt-PT",
         "gl": "PT",
         "ceid": "PT:pt-150",
-
         "searches": [
             '"SEO Google"',
             '"otimização SEO"',
@@ -189,7 +178,6 @@ CONFIGS = {
             '"algoritmo Google SEO"',
             '"marketing SEO"'
         ],
-
         "title": "Notícias SEO",
         "subtitle": "Google, otimização para motores de pesquisa, atualizações de algoritmos, pesquisa com IA e marketing digital.",
         "meta_title": "Notícias SEO | Google, Otimização & Pesquisa IA",
@@ -225,8 +213,96 @@ BLOCKED_TERMS = [
 ]
 
 
+def footer_html():
+
+    return """
+<footer>
+
+<div class="footer-main">
+
+<a href="https://www.seoschweiz.net/"
+target="_blank"
+rel="noopener">
+SEO Schweiz
+</a>
+
+</div>
+
+<div class="footer-links">
+
+<a href="https://www.facebook.com/seo.schweiz"
+target="_blank"
+rel="noopener">
+SEO Agentur Schweiz
+</a>
+
+<a href="https://www.facebook.com/suisse.seo/"
+target="_blank"
+rel="noopener">
+Agence SEO Suisse
+</a>
+
+<a href="https://www.facebook.com/seo.svizzera/"
+target="_blank"
+rel="noopener">
+Agenzia SEO Svizzera
+</a>
+
+<a href="https://www.facebook.com/seo.switzerland/"
+target="_blank"
+rel="noopener">
+SEO Agency Switzerland
+</a>
+
+</div>
+
+</footer>
+"""
+
+
+def footer_css():
+
+    return """
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 32px 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-main {
+  margin-bottom: 14px;
+}
+
+.footer-main a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 22px;
+}
+
+.footer-links a {
+  font-size: 14px;
+}
+"""
+
+
 def get_feed_url(query, config):
-    encoded_query = urllib.parse.quote(query + " when:7d")
+
+    encoded_query = urllib.parse.quote(
+        query + " when:7d"
+    )
 
     return (
         "https://news.google.com/rss/search?"
@@ -238,22 +314,32 @@ def get_feed_url(query, config):
 
 
 def load_feed(url):
+
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "Mozilla/5.0"}
     )
 
-    with urllib.request.urlopen(request, timeout=20) as response:
+    with urllib.request.urlopen(
+        request,
+        timeout=20
+    ) as response:
+
         return response.read()
 
 
 def parse_feed(xml_data):
+
     root = ET.fromstring(xml_data)
     articles = []
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+    cutoff = (
+        datetime.now(timezone.utc)
+        - timedelta(days=MAX_AGE_DAYS)
+    )
 
     for item in root.findall(".//item"):
+
         title = item.findtext("title", "").strip()
         link = item.findtext("link", "").strip()
         pub_date = item.findtext("pubDate", "").strip()
@@ -268,10 +354,13 @@ def parse_feed(xml_data):
             continue
 
         try:
+
             date = parsedate_to_datetime(pub_date)
 
             if date.tzinfo is None:
-                date = date.replace(tzinfo=timezone.utc)
+                date = date.replace(
+                    tzinfo=timezone.utc
+                )
 
             if date < cutoff:
                 continue
@@ -290,42 +379,60 @@ def parse_feed(xml_data):
 
 
 def collect_news(config):
+
     all_articles = []
 
     for query in config["searches"]:
+
         print(f"Searching: {query}")
 
         try:
-            url = get_feed_url(query, config)
-            xml_data = load_feed(url)
-            articles = parse_feed(xml_data)
-            all_articles.extend(articles)
 
-            print(f"{len(articles)} articles found.")
+            url = get_feed_url(
+                query,
+                config
+            )
+
+            xml_data = load_feed(url)
+
+            articles = parse_feed(
+                xml_data
+            )
+
+            all_articles.extend(
+                articles
+            )
 
         except Exception as error:
-            print(f"Error for {query}: {error}")
+
+            print(
+                f"Error for {query}: {error}"
+            )
 
     return all_articles
 
 
 def remove_duplicates(articles):
+
     unique = []
     seen = set()
 
     for article in articles:
+
         key = article["title"].lower().strip()
 
         if key in seen:
             continue
 
         seen.add(key)
+
         unique.append(article)
 
     return unique
 
 
 def make_slug(article):
+
     title = article["title"].lower()
 
     title = re.sub(
@@ -349,26 +456,26 @@ def make_slug(article):
 
 
 def local_article_url(language, article):
-    slug = make_slug(article)
 
     return (
         f"https://news.seoschweiz.net/"
-        f"{language}/news/{slug}/"
+        f"{language}/news/"
+        f"{make_slug(article)}/"
     )
 
 
 def local_article_path(language, article):
-    slug = make_slug(article)
 
     return os.path.join(
         language,
         "news",
-        slug,
+        make_slug(article),
         "index.html"
     )
 
 
 def language_menu():
+
     return """
 <a href="/">HOME</a> |
 <a href="/de/">DE</a> |
@@ -381,16 +488,20 @@ def language_menu():
 
 
 def hreflang_tags():
+
     tags = ""
 
     for language in CONFIGS.keys():
+
         tags += (
-            f'<link rel="alternate" hreflang="{language}" '
+            f'<link rel="alternate" '
+            f'hreflang="{language}" '
             f'href="https://news.seoschweiz.net/{language}/">\n'
         )
 
     tags += (
-        '<link rel="alternate" hreflang="x-default" '
+        '<link rel="alternate" '
+        'hreflang="x-default" '
         'href="https://news.seoschweiz.net/">\n'
     )
 
@@ -398,7 +509,9 @@ def hreflang_tags():
 
 
 def internal_topic_link(language):
+
     if language == "de":
+
         return """
 <section class="topic-link">
 
@@ -420,6 +533,7 @@ Google SEO News & aktuelle Google Updates ansehen →
 
 
 def rss_button(language):
+
     return f"""
 <a class="rss-button"
 href="/{language}/feed.xml">
@@ -429,6 +543,7 @@ RSS Feed
 
 
 def generate_article_page(language, config, article):
+
     local_url = local_article_url(
         language,
         article
@@ -439,16 +554,15 @@ def generate_article_page(language, config, article):
         article
     )
 
-    output_dir = os.path.dirname(
-        output_path
-    )
-
     os.makedirs(
-        output_dir,
+        os.path.dirname(output_path),
         exist_ok=True
     )
 
-    source = article["source"] or "Google News"
+    source = (
+        article["source"]
+        or "Google News"
+    )
 
     date_text = article["date"].strftime(
         "%d.%m.%Y %H:%M"
@@ -464,7 +578,9 @@ def generate_article_page(language, config, article):
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>{escape(article['title'])} | SEO News</title>
+<title>
+{escape(article['title'])} | SEO News
+</title>
 
 <meta name="description"
 content="{escape(article['title'])} – {escape(source)}">
@@ -544,18 +660,7 @@ header a {{
   font-weight: bold;
 }}
 
-footer {{
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 30px;
-  margin-top: 50px;
-}}
-
-footer a {{
-  color: white;
-  text-decoration: none;
-}}
+{footer_css()}
 
 </style>
 
@@ -612,17 +717,10 @@ href="/{language}/">
 
 </main>
 
-<footer>
-
-SEO News by
-
-<a href="https://www.seoschweiz.net/">
-SeoSchweiz.net
-</a>
-
-</footer>
+{footer_html()}
 
 </body>
+
 </html>
 """
 
@@ -631,10 +729,12 @@ SeoSchweiz.net
         "w",
         encoding="utf-8"
     ) as file:
+
         file.write(html)
 
 
 def generate_rss(language, config, articles):
+
     os.makedirs(
         language,
         exist_ok=True
@@ -653,11 +753,15 @@ def generate_rss(language, config, articles):
     items_xml = ""
 
     for article in articles[:MAX_FEED_ITEMS]:
+
         pub_date = format_datetime(
             article["date"]
         )
 
-        source_text = article["source"] or "Google News"
+        source_text = (
+            article["source"]
+            or "Google News"
+        )
 
         local_url = local_article_url(
             language,
@@ -680,13 +784,21 @@ def generate_rss(language, config, articles):
 
 <channel>
 
-<title>{escape(config['feed_title'])}</title>
+<title>
+{escape(config['feed_title'])}
+</title>
 
-<link>{page_url}</link>
+<link>
+{page_url}
+</link>
 
-<description>{escape(config['feed_description'])}</description>
+<description>
+{escape(config['feed_description'])}
+</description>
 
-<language>{language}</language>
+<language>
+{language}
+</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
@@ -706,20 +818,29 @@ type="application/rss+xml" />
         "w",
         encoding="utf-8"
     ) as file:
+
         file.write(rss)
 
 
 def generate_widget(language, config, articles):
+
     if language != "de":
         return
 
     widget_items = []
 
     for article in articles[:MAX_WIDGET_ITEMS]:
+
         widget_items.append({
             "title": article["title"],
-            "url": local_article_url(language, article),
-            "source": article["source"] or "Google News"
+            "url": local_article_url(
+                language,
+                article
+            ),
+            "source": (
+                article["source"]
+                or "Google News"
+            )
         })
 
     data_json = json.dumps(
@@ -730,49 +851,47 @@ def generate_widget(language, config, articles):
     widget_js = f"""
 (function() {{
 
-  var items = {data_json};
+var items = {data_json};
 
-  var html = '';
+var html = '';
 
-  html += '<div style="font-family:Arial,sans-serif;">';
+html += '<div style="font-family:Arial,sans-serif;">';
 
-  html += '<div style="font-weight:bold;font-size:18px;margin-bottom:12px;">';
-  html += 'SEO NEWS Schweiz';
-  html += '</div>';
+html += '<div style="font-weight:bold;font-size:18px;margin-bottom:12px;">SEO NEWS Schweiz</div>';
 
-  if (!items.length) {{
-    html += '<div>Momentan keine aktuellen SEO News.</div>';
-  }}
+items.forEach(function(item) {{
 
-  items.forEach(function(item) {{
+html += '<div style="margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #ddd;">';
 
-    html += '<div style="margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #ddd;">';
+html += '<a href="' + item.url + '" target="_blank" style="font-weight:bold;text-decoration:none;color:#222;">';
 
-    html += '<a href="' + item.url + '" ';
-    html += 'target="_blank" ';
-    html += 'style="font-weight:bold;text-decoration:none;color:#222;">';
-    html += item.title;
-    html += '</a>';
+html += item.title;
 
-    html += '<div style="font-size:12px;color:#777;margin-top:4px;">';
-    html += item.source;
-    html += '</div>';
+html += '</a>';
 
-    html += '</div>';
+html += '<div style="font-size:12px;color:#777;margin-top:4px;">';
 
-  }});
+html += item.source;
 
-  html += '<div style="margin-top:10px;">';
-  html += '<a href="https://news.seoschweiz.net/de/" ';
-  html += 'target="_blank" ';
-  html += 'style="font-weight:bold;text-decoration:none;color:#c00000;">';
-  html += 'Alle SEO News ansehen →';
-  html += '</a>';
-  html += '</div>';
+html += '</div>';
 
-  html += '</div>';
+html += '</div>';
 
-  document.write(html);
+}});
+
+html += '<div style="margin-top:10px;">';
+
+html += '<a href="https://news.seoschweiz.net/de/" target="_blank" style="font-weight:bold;text-decoration:none;color:#c00000;">';
+
+html += 'Alle SEO News ansehen →';
+
+html += '</a>';
+
+html += '</div>';
+
+html += '</div>';
+
+document.write(html);
 
 }})();
 """
@@ -782,14 +901,12 @@ def generate_widget(language, config, articles):
         "w",
         encoding="utf-8"
     ) as file:
-        file.write(widget_js)
 
-    print(
-        f"{language}: Blogger widget generated."
-    )
+        file.write(widget_js)
 
 
 def generate_page(language, config):
+
     articles = collect_news(
         config
     )
@@ -801,11 +918,10 @@ def generate_page(language, config):
 
     articles = remove_duplicates(
         articles
-    )
-
-    articles = articles[:MAX_NEWS]
+    )[:MAX_NEWS]
 
     for article in articles:
+
         generate_article_page(
             language,
             config,
@@ -827,7 +943,11 @@ def generate_page(language, config):
     news_html = ""
 
     for article in articles:
-        source = article["source"] or "Google News"
+
+        source = (
+            article["source"]
+            or "Google News"
+        )
 
         date_text = article["date"].strftime(
             "%d.%m.%Y %H:%M"
@@ -864,6 +984,7 @@ href="{escape(local_url)}">
 """
 
     if not articles:
+
         news_html = f"""
 <article class="news-item">
 
@@ -878,7 +999,9 @@ href="{escape(local_url)}">
 </article>
 """
 
-    updated = datetime.now(timezone.utc).strftime(
+    updated = datetime.now(
+        timezone.utc
+    ).strftime(
         "%d.%m.%Y %H:%M UTC"
     )
 
@@ -1037,21 +1160,12 @@ header p {{
   font-size: 14px;
 }}
 
-footer {{
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 30px;
-}}
-
-footer a {{
-  color: white;
-  text-decoration: none;
-}}
+{footer_css()}
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -1075,6 +1189,7 @@ footer a {{
 
 </header>
 
+
 <main class="container">
 
 {internal_topic_link(language)}
@@ -1090,46 +1205,38 @@ footer a {{
 
 </main>
 
-<footer>
-
-SEO News by
-
-<a href="https://www.seoschweiz.net/">
-SeoSchweiz.net
-</a>
-
-</footer>
+{footer_html()}
 
 </body>
 
 </html>
 """
 
-    output_dir = os.path.dirname(
-        config["output"]
+    os.makedirs(
+        os.path.dirname(
+            config["output"]
+        ),
+        exist_ok=True
     )
-
-    if output_dir:
-        os.makedirs(
-            output_dir,
-            exist_ok=True
-        )
 
     with open(
         config["output"],
         "w",
         encoding="utf-8"
     ) as file:
+
         file.write(html)
 
 
 def generate_sitemap():
+
     urls = [
         "https://news.seoschweiz.net/",
         "https://news.seoschweiz.net/de/google-seo-news/"
     ]
 
     for language in CONFIGS.keys():
+
         urls.append(
             f"https://news.seoschweiz.net/{language}/"
         )
@@ -1140,6 +1247,7 @@ def generate_sitemap():
 """
 
     for url in urls:
+
         sitemap += f"""
   <url>
     <loc>{url}</loc>
@@ -1155,11 +1263,14 @@ def generate_sitemap():
         "w",
         encoding="utf-8"
     ) as file:
+
         file.write(sitemap)
 
 
 def main():
+
     for language, config in CONFIGS.items():
+
         print(
             f"\n--- Updating {language} ---"
         )
@@ -1173,4 +1284,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
