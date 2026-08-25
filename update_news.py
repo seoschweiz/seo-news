@@ -1,19 +1,38 @@
 import urllib.request
+import urllib.parse
 import xml.etree.ElementTree as ET
 from html import escape
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
-RSS_URL = "https://news.google.com/rss/search?q=SEO+Google+Suchmaschinenoptimierung&hl=de&gl=DE&ceid=DE:de"
-
 OUTPUT_FILE = "de/index.html"
 MAX_NEWS = 30
 MAX_AGE_DAYS = 7
 
+SEARCHES = [
+    "SEO",
+    "Google Search",
+    "Google Algorithm",
+    "Suchmaschinenoptimierung",
+    "AI Search"
+]
 
-def load_feed():
+
+def get_feed_url(query):
+    encoded_query = urllib.parse.quote(query + " when:7d")
+
+    return (
+        "https://news.google.com/rss/search?"
+        f"q={encoded_query}"
+        "&hl=de"
+        "&gl=DE"
+        "&ceid=DE:de"
+    )
+
+
+def load_feed(url):
     request = urllib.request.Request(
-        RSS_URL,
+        url,
         headers={"User-Agent": "Mozilla/5.0"}
     )
 
@@ -47,31 +66,80 @@ def parse_feed(xml_data):
             if date < cutoff_date:
                 continue
 
-            date_text = date.strftime("%d.%m.%Y %H:%M")
-
         except Exception:
             continue
 
         articles.append({
             "title": title,
             "link": link,
-            "date": date_text,
+            "date": date,
             "source": source
         })
-
-        if len(articles) >= MAX_NEWS:
-            break
 
     return articles
 
 
+def collect_news():
+
+    all_articles = []
+
+    for query in SEARCHES:
+
+        print(f"Suche News für: {query}")
+
+        try:
+            url = get_feed_url(query)
+            xml_data = load_feed(url)
+            articles = parse_feed(xml_data)
+
+            all_articles.extend(articles)
+
+            print(f"{len(articles)} Artikel gefunden.")
+
+        except Exception as error:
+            print(f"Fehler bei {query}: {error}")
+
+    return all_articles
+
+
+def remove_duplicates(articles):
+
+    unique = []
+    seen_titles = set()
+
+    for article in articles:
+
+        title_key = article["title"].lower().strip()
+
+        if title_key in seen_titles:
+            continue
+
+        seen_titles.add(title_key)
+        unique.append(article)
+
+    return unique
+
+
 def generate_html(articles):
+
+    articles.sort(
+        key=lambda article: article["date"],
+        reverse=True
+    )
+
+    articles = remove_duplicates(articles)
+
+    articles = articles[:MAX_NEWS]
 
     news_html = ""
 
     for article in articles:
 
         source_text = article["source"] or "Google News"
+
+        date_text = article["date"].strftime(
+            "%d.%m.%Y %H:%M"
+        )
 
         news_html += f"""
         <article class="news-item">
@@ -85,20 +153,31 @@ def generate_html(articles):
           </h2>
 
           <p class="source">
-            {escape(source_text)} · {escape(article['date'])}
+            {escape(source_text)} · {escape(date_text)}
           </p>
 
           <a class="read-more"
              href="{escape(article['link'])}"
              target="_blank"
              rel="noopener noreferrer">
-             Artikel lesen →
+            Artikel lesen →
           </a>
 
         </article>
         """
 
-    updated = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M UTC")
+    if not articles:
+
+        news_html = """
+        <article class="news-item">
+          <h2>Momentan keine aktuellen SEO News gefunden</h2>
+          <p>Beim nächsten automatischen Update wird erneut gesucht.</p>
+        </article>
+        """
+
+    updated = datetime.now(timezone.utc).strftime(
+        "%d.%m.%Y %H:%M UTC"
+    )
 
     html = f"""<!DOCTYPE html>
 <html lang="de">
@@ -113,9 +192,10 @@ content="width=device-width, initial-scale=1.0">
 <title>Aktuelle SEO News | Google, Bing & Suchmaschinenoptimierung</title>
 
 <meta name="description"
-content="Aktuelle SEO News über Google, Bing, Suchmaschinenoptimierung, Algorithmus Updates, AI Search, Keywords, Backlinks und digitales Marketing.">
+content="Aktuelle SEO News über Google, Bing, Suchmaschinenoptimierung, Google Updates, AI Search, Keywords, Backlinks und digitales Marketing.">
 
-<meta name="robots" content="index, follow">
+<meta name="robots"
+content="index, follow">
 
 <link rel="canonical"
 href="https://news.seoschweiz.net/de/">
@@ -229,8 +309,8 @@ footer a {{
 <h1>Aktuelle SEO News</h1>
 
 <p>
-Google, Bing, Suchmaschinenoptimierung,
-AI Search und digitales Marketing.
+Google, Suchmaschinenoptimierung,
+Algorithmus Updates, AI Search und digitales Marketing.
 </p>
 
 <div class="home">
@@ -264,19 +344,24 @@ SeoSchweiz.net
 </html>
 """
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
+    with open(
+        OUTPUT_FILE,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
         file.write(html)
+
+    print(
+        f"{len(articles)} aktuelle News veröffentlicht."
+    )
 
 
 def main():
 
-    xml_data = load_feed()
-
-    articles = parse_feed(xml_data)
+    articles = collect_news()
 
     generate_html(articles)
-
-    print(f"{len(articles)} aktuelle News-Artikel veröffentlicht.")
 
 
 if __name__ == "__main__":
