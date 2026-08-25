@@ -2,11 +2,9 @@
 (function() {
 
 var items = [{"title": "Aktuell im SEO: Neue All-in-One-Plattform macht KI-Sichtbarkeit für KMU planbar", "url": "https://news.seoschweiz.net/de/news/neue-all-in-one-plattform-macht-ki-sichtbarkeit-f-r-kmu-planbar-pressn-956de35a/", "source": "PressNetwork.de"}, {"title": "Neues aus der Google-Suche: Epic und Google einigen sich. Android wird außerdem ein besseres RAM-Management bieten.", "url": "https://news.seoschweiz.net/de/news/epic-und-google-einigen-sich-android-wird-au-erdem-ein-besseres-ram-ma-9ee85c72/", "source": "Samsung Magazine"}, {"title": "SEO Update im Fokus: Winfried Wengenroth baut Partnernetzwerk von CITY IMMOBILIENMAKLER weiter aus", "url": "https://news.seoschweiz.net/de/news/winfried-wengenroth-baut-partnernetzwerk-von-city-immobilienmakler-wei-6118530b/", "source": "PressNetwork.de"}, {"title": "Aktuell im SEO: Endlich auf der Karte: Google Trends bekommt Explore Maps und regionale Auswertungen", "url": "https://news.seoschweiz.net/de/news/endlich-auf-der-karte-google-trends-bekommt-explore-maps-und-regionale-c10e18ee/", "source": "OnlineMarketing.de"}, {"title": "Aktuelle Entwicklung im SEO: Google startet August 2026 Spam Update: Was du wissen musst", "url": "https://news.seoschweiz.net/de/news/google-startet-august-2026-spam-update-was-du-wissen-musst-onlinemarke-db1086e3/", "source": "OnlineMarketing.de"}];
-
 var html = '';
 
 html += '<div style="font-family:Arial,sans-serif;">';
-
 html += '<div style="font-weight:bold;font-size:18px;margin-bottom:12px;">SEO NEWS Schweiz</div>';
 
 items.forEach(function(item) {
@@ -23,9 +21,7 @@ html += '<div style="font-size:12px;color:#777;margin-top:4px;">';
 
 html += item.source;
 
-html += '</div>';
-
-html += '</div>';
+html += '</div></div>';
 
 });
 
@@ -35,11 +31,7 @@ html += '<a href="https://news.seoschweiz.net/de/" target="_blank" style="font-w
 
 html += 'Alle SEO News ansehen →';
 
-html += '</a>';
-
-html += '</div>';
-
-html += '</div>';
+html += '</a></div></div>';
 
 document.write(html);
 

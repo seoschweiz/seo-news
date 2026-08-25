@@ -4,21 +4,13 @@
 
 <channel>
 
-<title>
-SEO News Deutsch
-</title>
+<title>SEO News Deutsch</title>
 
-<link>
-https://news.seoschweiz.net/de/
-</link>
+<link>https://news.seoschweiz.net/de/</link>
 
-<description>
-Aktuelle deutschsprachige SEO News über Google, Suchmaschinenoptimierung, Algorithmen und AI Search.
-</description>
+<description>Aktuelle deutschsprachige SEO News über Google, Suchmaschinenoptimierung, Algorithmen und AI Search.</description>
 
-<language>
-de
-</language>
+<language>de</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
@@ -28,147 +20,51 @@ type="application/rss+xml" />
 
 
   <item>
-
-    <title>
-      Aktuell im SEO: Neue All-in-One-Plattform macht KI-Sichtbarkeit für KMU planbar
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/de/news/neue-all-in-one-plattform-macht-ki-sichtbarkeit-f-r-kmu-planbar-pressn-956de35a/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/de/news/neue-all-in-one-plattform-macht-ki-sichtbarkeit-f-r-kmu-planbar-pressn-956de35a/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 07:56:38 +0000
-    </pubDate>
-
-    <description>
-      Aktuelle SEO News zu Neue All-in-One-Plattform macht KI-Sichtbarkeit für KMU planbar. Neue Entwicklungen rund um Google Search, Rankings und Suchmaschineno...
-    </description>
-
+    <title>Aktuell im SEO: Neue All-in-One-Plattform macht KI-Sichtbarkeit für KMU planbar</title>
+    <link>https://news.seoschweiz.net/de/news/neue-all-in-one-plattform-macht-ki-sichtbarkeit-f-r-kmu-planbar-pressn-956de35a/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/de/news/neue-all-in-one-plattform-macht-ki-sichtbarkeit-f-r-kmu-planbar-pressn-956de35a/</guid>
+    <pubDate>Mon, 24 Aug 2026 07:56:38 +0000</pubDate>
+    <description>Aktuelle SEO News zu Neue All-in-One-Plattform macht KI-Sichtbarkeit für KMU planbar. Neue Entwicklungen rund um Google Search, Rankings und Suchmaschineno...</description>
   </item>
 
   <item>
-
-    <title>
-      Neues aus der Google-Suche: Epic und Google einigen sich. Android wird außerdem ein besseres RAM-Management bieten.
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/de/news/epic-und-google-einigen-sich-android-wird-au-erdem-ein-besseres-ram-ma-9ee85c72/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/de/news/epic-und-google-einigen-sich-android-wird-au-erdem-ein-besseres-ram-ma-9ee85c72/
-    </guid>
-
-    <pubDate>
-      Thu, 20 Aug 2026 20:03:48 +0000
-    </pubDate>
-
-    <description>
-      Aktuelle SEO News zu Epic und Google einigen sich. Android wird außerdem ein besseres RAM-Management bieten.. Neue Entwicklungen rund um Google Search, Ran...
-    </description>
-
+    <title>Neues aus der Google-Suche: Epic und Google einigen sich. Android wird außerdem ein besseres RAM-Management bieten.</title>
+    <link>https://news.seoschweiz.net/de/news/epic-und-google-einigen-sich-android-wird-au-erdem-ein-besseres-ram-ma-9ee85c72/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/de/news/epic-und-google-einigen-sich-android-wird-au-erdem-ein-besseres-ram-ma-9ee85c72/</guid>
+    <pubDate>Thu, 20 Aug 2026 20:03:48 +0000</pubDate>
+    <description>Aktuelle SEO News zu Epic und Google einigen sich. Android wird außerdem ein besseres RAM-Management bieten.. Neue Entwicklungen rund um Google Search, Ran...</description>
   </item>
 
   <item>
-
-    <title>
-      SEO Update im Fokus: Winfried Wengenroth baut Partnernetzwerk von CITY IMMOBILIENMAKLER weiter aus
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/de/news/winfried-wengenroth-baut-partnernetzwerk-von-city-immobilienmakler-wei-6118530b/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/de/news/winfried-wengenroth-baut-partnernetzwerk-von-city-immobilienmakler-wei-6118530b/
-    </guid>
-
-    <pubDate>
-      Thu, 20 Aug 2026 10:44:18 +0000
-    </pubDate>
-
-    <description>
-      Aktuelle SEO News zu Winfried Wengenroth baut Partnernetzwerk von CITY IMMOBILIENMAKLER weiter aus. Neue Entwicklungen rund um Google Search, Rankings und...
-    </description>
-
+    <title>SEO Update im Fokus: Winfried Wengenroth baut Partnernetzwerk von CITY IMMOBILIENMAKLER weiter aus</title>
+    <link>https://news.seoschweiz.net/de/news/winfried-wengenroth-baut-partnernetzwerk-von-city-immobilienmakler-wei-6118530b/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/de/news/winfried-wengenroth-baut-partnernetzwerk-von-city-immobilienmakler-wei-6118530b/</guid>
+    <pubDate>Thu, 20 Aug 2026 10:44:18 +0000</pubDate>
+    <description>Aktuelle SEO News zu Winfried Wengenroth baut Partnernetzwerk von CITY IMMOBILIENMAKLER weiter aus. Neue Entwicklungen rund um Google Search, Rankings und...</description>
   </item>
 
   <item>
-
-    <title>
-      Aktuell im SEO: Endlich auf der Karte: Google Trends bekommt Explore Maps und regionale Auswertungen
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/de/news/endlich-auf-der-karte-google-trends-bekommt-explore-maps-und-regionale-c10e18ee/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/de/news/endlich-auf-der-karte-google-trends-bekommt-explore-maps-und-regionale-c10e18ee/
-    </guid>
-
-    <pubDate>
-      Thu, 20 Aug 2026 08:00:44 +0000
-    </pubDate>
-
-    <description>
-      SEO Update zu Endlich auf der Karte: Google Trends bekommt Explore Maps und regionale Auswertungen. Aktuelle Informationen zu Google Search, Suchmaschineno...
-    </description>
-
+    <title>Aktuell im SEO: Endlich auf der Karte: Google Trends bekommt Explore Maps und regionale Auswertungen</title>
+    <link>https://news.seoschweiz.net/de/news/endlich-auf-der-karte-google-trends-bekommt-explore-maps-und-regionale-c10e18ee/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/de/news/endlich-auf-der-karte-google-trends-bekommt-explore-maps-und-regionale-c10e18ee/</guid>
+    <pubDate>Thu, 20 Aug 2026 08:00:44 +0000</pubDate>
+    <description>SEO Update zu Endlich auf der Karte: Google Trends bekommt Explore Maps und regionale Auswertungen. Aktuelle Informationen zu Google Search, Suchmaschineno...</description>
   </item>
 
   <item>
-
-    <title>
-      Aktuelle Entwicklung im SEO: Google startet August 2026 Spam Update: Was du wissen musst
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/de/news/google-startet-august-2026-spam-update-was-du-wissen-musst-onlinemarke-db1086e3/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/de/news/google-startet-august-2026-spam-update-was-du-wissen-musst-onlinemarke-db1086e3/
-    </guid>
-
-    <pubDate>
-      Wed, 19 Aug 2026 08:00:27 +0000
-    </pubDate>
-
-    <description>
-      Neuigkeiten zu Google startet August 2026 Spam Update: Was du wissen musst: SEO Schweiz beobachtet aktuelle Entwicklungen bei Google, Rankings, Algorithmen...
-    </description>
-
+    <title>Aktuelle Entwicklung im SEO: Google startet August 2026 Spam Update: Was du wissen musst</title>
+    <link>https://news.seoschweiz.net/de/news/google-startet-august-2026-spam-update-was-du-wissen-musst-onlinemarke-db1086e3/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/de/news/google-startet-august-2026-spam-update-was-du-wissen-musst-onlinemarke-db1086e3/</guid>
+    <pubDate>Wed, 19 Aug 2026 08:00:27 +0000</pubDate>
+    <description>Neuigkeiten zu Google startet August 2026 Spam Update: Was du wissen musst: SEO Schweiz beobachtet aktuelle Entwicklungen bei Google, Rankings, Algorithmen...</description>
   </item>
 
   <item>
-
-    <title>
-      Google Search News: Job des Tages: NOZ sucht SEO &amp; Google Discover Specialist
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/de/news/job-des-tages-noz-sucht-seo-google-discover-specialist-kress-de-19e0b545/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/de/news/job-des-tages-noz-sucht-seo-google-discover-specialist-kress-de-19e0b545/
-    </guid>
-
-    <pubDate>
-      Wed, 19 Aug 2026 05:00:00 +0000
-    </pubDate>
-
-    <description>
-      Aktuelle Meldung zu Job des Tages: NOZ sucht SEO &amp; Google Discover Specialist. SEO News und Updates rund um Google Search und Suchmaschinenoptimierung bei...
-    </description>
-
+    <title>Google Search News: Job des Tages: NOZ sucht SEO &amp; Google Discover Specialist</title>
+    <link>https://news.seoschweiz.net/de/news/job-des-tages-noz-sucht-seo-google-discover-specialist-kress-de-19e0b545/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/de/news/job-des-tages-noz-sucht-seo-google-discover-specialist-kress-de-19e0b545/</guid>
+    <pubDate>Wed, 19 Aug 2026 05:00:00 +0000</pubDate>
+    <description>Aktuelle Meldung zu Job des Tages: NOZ sucht SEO &amp; Google Discover Specialist. SEO News und Updates rund um Google Search und Suchmaschinenoptimierung bei...</description>
   </item>
 
 
