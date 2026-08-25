@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "SEO News Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add de/index.html en/index.html fr/index.html it/index.html es/index.html pt/index.html
+          git add de/index.html en/index.html fr/index.html it/index.html es/index.html pt/index.html sitemap.xml
           git diff --cached --quiet || git commit -m "Automatic multilingual SEO news update"
           git push
