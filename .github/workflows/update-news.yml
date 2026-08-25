@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Update SEO news, article pages and RSS feeds
+      - name: Update SEO news, article pages, RSS feeds and sitemaps
         run: python update_news.py
 
       - name: Commit all generated content
@@ -37,7 +37,8 @@ jobs:
             it \
             es \
             pt \
-            sitemap.xml
+            sitemap.xml \
+            news-sitemap.xml
 
-          git diff --cached --quiet || git commit -m "Automatic SEO news, article pages and RSS update"
+          git diff --cached --quiet || git commit -m "Automatic SEO news, structured data and sitemap update"
           git push
