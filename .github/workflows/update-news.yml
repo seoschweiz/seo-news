@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "SEO News Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add de/index.html
+          git add de/index.html en/index.html
           git diff --cached --quiet || git commit -m "Automatic SEO news update"
           git push
