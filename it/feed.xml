@@ -4,21 +4,13 @@
 
 <channel>
 
-<title>
-Notizie SEO Italiano
-</title>
+<title>Notizie SEO Italiano</title>
 
-<link>
-https://news.seoschweiz.net/it/
-</link>
+<link>https://news.seoschweiz.net/it/</link>
 
-<description>
-Notizie SEO in italiano su Google, ottimizzazione, algoritmi e AI Search.
-</description>
+<description>Notizie SEO in italiano su Google, ottimizzazione, algoritmi e AI Search.</description>
 
-<language>
-it
-</language>
+<language>it</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
@@ -28,195 +20,67 @@ type="application/rss+xml" />
 
 
   <item>
-
-    <title>
-      GEO e intelligenza artificiale: come cambia il monitoraggio della visibilità online - AbruzzoNews24
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/geo-e-intelligenza-artificiale-come-cambia-il-monitoraggio-della-visib-014f184f/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/geo-e-intelligenza-artificiale-come-cambia-il-monitoraggio-della-visib-014f184f/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 14:40:03 +0000
-    </pubDate>
-
-    <description>
-      AbruzzoNews24
-    </description>
-
+    <title>GEO e intelligenza artificiale: come cambia il monitoraggio della visibilità online - AbruzzoNews24</title>
+    <link>https://news.seoschweiz.net/it/news/geo-e-intelligenza-artificiale-come-cambia-il-monitoraggio-della-visib-014f184f/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/geo-e-intelligenza-artificiale-come-cambia-il-monitoraggio-della-visib-014f184f/</guid>
+    <pubDate>Mon, 24 Aug 2026 14:40:03 +0000</pubDate>
+    <description>AbruzzoNews24</description>
   </item>
 
   <item>
-
-    <title>
-      Llms.txt: cos’è, a che serve e dove usarlo - Italiaonline
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/llms-txt-cos-a-che-serve-e-dove-usarlo-italiaonline-41d0fc56/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/llms-txt-cos-a-che-serve-e-dove-usarlo-italiaonline-41d0fc56/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 11:33:46 +0000
-    </pubDate>
-
-    <description>
-      Italiaonline
-    </description>
-
+    <title>Llms.txt: cos’è, a che serve e dove usarlo - Italiaonline</title>
+    <link>https://news.seoschweiz.net/it/news/llms-txt-cos-a-che-serve-e-dove-usarlo-italiaonline-41d0fc56/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/llms-txt-cos-a-che-serve-e-dove-usarlo-italiaonline-41d0fc56/</guid>
+    <pubDate>Mon, 24 Aug 2026 11:33:46 +0000</pubDate>
+    <description>Italiaonline</description>
   </item>
 
   <item>
-
-    <title>
-      Auto aziendali, cambia tutto: aumenta la tassazione sulle vetture con più di 5 anni – LMF - LaMiaFinanza
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/auto-aziendali-cambia-tutto-aumenta-la-tassazione-sulle-vetture-con-pi-d1ad51b1/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/auto-aziendali-cambia-tutto-aumenta-la-tassazione-sulle-vetture-con-pi-d1ad51b1/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 07:09:03 +0000
-    </pubDate>
-
-    <description>
-      LaMiaFinanza
-    </description>
-
+    <title>Auto aziendali, cambia tutto: aumenta la tassazione sulle vetture con più di 5 anni – LMF - LaMiaFinanza</title>
+    <link>https://news.seoschweiz.net/it/news/auto-aziendali-cambia-tutto-aumenta-la-tassazione-sulle-vetture-con-pi-d1ad51b1/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/auto-aziendali-cambia-tutto-aumenta-la-tassazione-sulle-vetture-con-pi-d1ad51b1/</guid>
+    <pubDate>Mon, 24 Aug 2026 07:09:03 +0000</pubDate>
+    <description>LaMiaFinanza</description>
   </item>
 
   <item>
-
-    <title>
-      Shein, debutto in Borsa a Hong Kong il 1° settembre: valutazione fino a 27 miliardi di dollari – LMF - LaMiaFinanza
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/shein-debutto-in-borsa-a-hong-kong-il-1-settembre-valutazione-fino-a-2-6fa8e90f/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/shein-debutto-in-borsa-a-hong-kong-il-1-settembre-valutazione-fino-a-2-6fa8e90f/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 06:54:50 +0000
-    </pubDate>
-
-    <description>
-      LaMiaFinanza
-    </description>
-
+    <title>Shein, debutto in Borsa a Hong Kong il 1° settembre: valutazione fino a 27 miliardi di dollari – LMF - LaMiaFinanza</title>
+    <link>https://news.seoschweiz.net/it/news/shein-debutto-in-borsa-a-hong-kong-il-1-settembre-valutazione-fino-a-2-6fa8e90f/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/shein-debutto-in-borsa-a-hong-kong-il-1-settembre-valutazione-fino-a-2-6fa8e90f/</guid>
+    <pubDate>Mon, 24 Aug 2026 06:54:50 +0000</pubDate>
+    <description>LaMiaFinanza</description>
   </item>
 
   <item>
-
-    <title>
-      Local SEO, Google Maps e AI: intervista a Mauro Sordello su come le PMI possono farsi trovare online - AbruzzoNews24
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/local-seo-google-maps-e-ai-intervista-a-mauro-sordello-su-come-le-pmi--7a88ada9/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/local-seo-google-maps-e-ai-intervista-a-mauro-sordello-su-come-le-pmi--7a88ada9/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 05:25:59 +0000
-    </pubDate>
-
-    <description>
-      AbruzzoNews24
-    </description>
-
+    <title>Local SEO, Google Maps e AI: intervista a Mauro Sordello su come le PMI possono farsi trovare online - AbruzzoNews24</title>
+    <link>https://news.seoschweiz.net/it/news/local-seo-google-maps-e-ai-intervista-a-mauro-sordello-su-come-le-pmi--7a88ada9/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/local-seo-google-maps-e-ai-intervista-a-mauro-sordello-su-come-le-pmi--7a88ada9/</guid>
+    <pubDate>Mon, 24 Aug 2026 05:25:59 +0000</pubDate>
+    <description>AbruzzoNews24</description>
   </item>
 
   <item>
-
-    <title>
-      Probabili Formazioni Serie A. Probabili formazioni fantacalcio - Europa Calcio
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/probabili-formazioni-serie-a-probabili-formazioni-fantacalcio-europa-c-32bcd3b1/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/probabili-formazioni-serie-a-probabili-formazioni-fantacalcio-europa-c-32bcd3b1/
-    </guid>
-
-    <pubDate>
-      Sat, 22 Aug 2026 12:00:44 +0000
-    </pubDate>
-
-    <description>
-      Europa Calcio
-    </description>
-
+    <title>Probabili Formazioni Serie A. Probabili formazioni fantacalcio - Europa Calcio</title>
+    <link>https://news.seoschweiz.net/it/news/probabili-formazioni-serie-a-probabili-formazioni-fantacalcio-europa-c-32bcd3b1/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/probabili-formazioni-serie-a-probabili-formazioni-fantacalcio-europa-c-32bcd3b1/</guid>
+    <pubDate>Sat, 22 Aug 2026 12:00:44 +0000</pubDate>
+    <description>Europa Calcio</description>
   </item>
 
   <item>
-
-    <title>
-      Unitree, debutto record per i robot umanoidi alla Borsa di Shanghai. Superman supera i 45 km/h e salta 2 metri - LaMiaFinanza
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/unitree-debutto-record-per-i-robot-umanoidi-alla-borsa-di-shanghai-sup-c83429ef/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/unitree-debutto-record-per-i-robot-umanoidi-alla-borsa-di-shanghai-sup-c83429ef/
-    </guid>
-
-    <pubDate>
-      Fri, 21 Aug 2026 12:12:14 +0000
-    </pubDate>
-
-    <description>
-      LaMiaFinanza
-    </description>
-
+    <title>Unitree, debutto record per i robot umanoidi alla Borsa di Shanghai. Superman supera i 45 km/h e salta 2 metri - LaMiaFinanza</title>
+    <link>https://news.seoschweiz.net/it/news/unitree-debutto-record-per-i-robot-umanoidi-alla-borsa-di-shanghai-sup-c83429ef/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/unitree-debutto-record-per-i-robot-umanoidi-alla-borsa-di-shanghai-sup-c83429ef/</guid>
+    <pubDate>Fri, 21 Aug 2026 12:12:14 +0000</pubDate>
+    <description>LaMiaFinanza</description>
   </item>
 
   <item>
-
-    <title>
-      ChatGPT arriva in versione Teens, più sicurezza e controlli parentali per gli adolescenti – LMF - LaMiaFinanza
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/it/news/chatgpt-arriva-in-versione-teens-pi-sicurezza-e-controlli-parentali-pe-6ed02f7c/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/it/news/chatgpt-arriva-in-versione-teens-pi-sicurezza-e-controlli-parentali-pe-6ed02f7c/
-    </guid>
-
-    <pubDate>
-      Wed, 19 Aug 2026 03:51:25 +0000
-    </pubDate>
-
-    <description>
-      LaMiaFinanza
-    </description>
-
+    <title>ChatGPT arriva in versione Teens, più sicurezza e controlli parentali per gli adolescenti – LMF - LaMiaFinanza</title>
+    <link>https://news.seoschweiz.net/it/news/chatgpt-arriva-in-versione-teens-pi-sicurezza-e-controlli-parentali-pe-6ed02f7c/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/it/news/chatgpt-arriva-in-versione-teens-pi-sicurezza-e-controlli-parentali-pe-6ed02f7c/</guid>
+    <pubDate>Wed, 19 Aug 2026 03:51:25 +0000</pubDate>
+    <description>LaMiaFinanza</description>
   </item>
 
 

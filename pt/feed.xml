@@ -4,21 +4,13 @@
 
 <channel>
 
-<title>
-Notícias SEO Português
-</title>
+<title>Notícias SEO Português</title>
 
-<link>
-https://news.seoschweiz.net/pt/
-</link>
+<link>https://news.seoschweiz.net/pt/</link>
 
-<description>
-Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA.
-</description>
+<description>Notícias SEO em português sobre Google, otimização, algoritmos e pesquisa com IA.</description>
 
-<language>
-pt
-</language>
+<language>pt</language>
 
 <atom:link
 xmlns:atom="http://www.w3.org/2005/Atom"
@@ -28,291 +20,99 @@ type="application/rss+xml" />
 
 
   <item>
-
-    <title>
-      Google testa destaque rosa em featured snippets, e a cor não é só estética - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 13:04:13 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google testa destaque rosa em featured snippets, e a cor não é só estética - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-testa-destaque-rosa-em-featured-snippets-e-a-cor-n-o-s-est-tica-eec9add7/</guid>
+    <pubDate>Mon, 24 Aug 2026 13:04:13 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      Google corrige bug de favicon e crawl stats do Search Console - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/
-    </guid>
-
-    <pubDate>
-      Mon, 24 Aug 2026 11:03:08 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google corrige bug de favicon e crawl stats do Search Console - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicon-e-crawl-stats-do-search-console-imasters-2aa71eba/</guid>
+    <pubDate>Mon, 24 Aug 2026 11:03:08 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      Google reduz exibição do carousel de vídeos na busca e afeta descoberta de conteúdo técnico - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/
-    </guid>
-
-    <pubDate>
-      Sun, 23 Aug 2026 13:30:03 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google reduz exibição do carousel de vídeos na busca e afeta descoberta de conteúdo técnico - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-reduz-exibi-o-do-carousel-de-v-deos-na-busca-e-afeta-descoberta-3f301488/</guid>
+    <pubDate>Sun, 23 Aug 2026 13:30:03 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      Google corrige bug de favicons quebrados na busca - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/
-    </guid>
-
-    <pubDate>
-      Sun, 23 Aug 2026 13:03:07 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google corrige bug de favicons quebrados na busca - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-corrige-bug-de-favicons-quebrados-na-busca-imasters-992bb05c/</guid>
+    <pubDate>Sun, 23 Aug 2026 13:03:07 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      Google confirma: não há rollout de update antes do anúncio oficial - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/
-    </guid>
-
-    <pubDate>
-      Sat, 22 Aug 2026 13:30:18 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google confirma: não há rollout de update antes do anúncio oficial - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-confirma-n-o-h-rollout-de-update-antes-do-an-ncio-oficial-imast-e3e4d297/</guid>
+    <pubDate>Sat, 22 Aug 2026 13:30:18 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      Marketing digital ganha força no Paraná e aproxima empresas de agências especializadas em resultados - Ubiratã Online
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/
-    </guid>
-
-    <pubDate>
-      Fri, 21 Aug 2026 18:32:17 +0000
-    </pubDate>
-
-    <description>
-      Ubiratã Online
-    </description>
-
+    <title>Marketing digital ganha força no Paraná e aproxima empresas de agências especializadas em resultados - Ubiratã Online</title>
+    <link>https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/marketing-digital-ganha-for-a-no-paran-e-aproxima-empresas-de-ag-ncias-a37202cf/</guid>
+    <pubDate>Fri, 21 Aug 2026 18:32:17 +0000</pubDate>
+    <description>Ubiratã Online</description>
   </item>
 
   <item>
-
-    <title>
-      MEC oferece curso gratuito de segurança digital com certificado - Hora Brasil
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/
-    </guid>
-
-    <pubDate>
-      Fri, 21 Aug 2026 13:53:37 +0000
-    </pubDate>
-
-    <description>
-      Hora Brasil
-    </description>
-
+    <title>MEC oferece curso gratuito de segurança digital com certificado - Hora Brasil</title>
+    <link>https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/mec-oferece-curso-gratuito-de-seguran-a-digital-com-certificado-hora-b-f7834ca3/</guid>
+    <pubDate>Fri, 21 Aug 2026 13:53:37 +0000</pubDate>
+    <description>Hora Brasil</description>
   </item>
 
   <item>
-
-    <title>
-      Google Discover ganha ajuste por palavras: o que muda para quem publica - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/
-    </guid>
-
-    <pubDate>
-      Fri, 21 Aug 2026 13:03:35 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google Discover ganha ajuste por palavras: o que muda para quem publica - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-discover-ganha-ajuste-por-palavras-o-que-muda-para-quem-publica-ac60feb4/</guid>
+    <pubDate>Fri, 21 Aug 2026 13:03:35 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      Google conclui o Spam Update de agosto de 2026: o que muda no ranking - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/
-    </guid>
-
-    <pubDate>
-      Fri, 21 Aug 2026 11:03:58 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google conclui o Spam Update de agosto de 2026: o que muda no ranking - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-conclui-o-spam-update-de-agosto-de-2026-o-que-muda-no-ranking-i-4bec81f2/</guid>
+    <pubDate>Fri, 21 Aug 2026 11:03:58 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
   <item>
-
-    <title>
-      MEC abre mais 5 mil vagas para curso de Neuroeducação com certificado de 200 horas - Hora Brasil
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/
-    </guid>
-
-    <pubDate>
-      Tue, 18 Aug 2026 17:02:44 +0000
-    </pubDate>
-
-    <description>
-      Hora Brasil
-    </description>
-
+    <title>MEC abre mais 5 mil vagas para curso de Neuroeducação com certificado de 200 horas - Hora Brasil</title>
+    <link>https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/mec-abre-mais-5-mil-vagas-para-curso-de-neuroeduca-o-com-certificado-d-33a682f7/</guid>
+    <pubDate>Tue, 18 Aug 2026 17:02:44 +0000</pubDate>
+    <description>Hora Brasil</description>
   </item>
 
   <item>
-
-    <title>
-      MEC abre inscrições para cursos EAD gratuitos de Inteligência Artificial - Hora Brasil
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/
-    </guid>
-
-    <pubDate>
-      Tue, 18 Aug 2026 15:23:48 +0000
-    </pubDate>
-
-    <description>
-      Hora Brasil
-    </description>
-
+    <title>MEC abre inscrições para cursos EAD gratuitos de Inteligência Artificial - Hora Brasil</title>
+    <link>https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/mec-abre-inscri-es-para-cursos-ead-gratuitos-de-intelig-ncia-artificia-ae59bd35/</guid>
+    <pubDate>Tue, 18 Aug 2026 15:23:48 +0000</pubDate>
+    <description>Hora Brasil</description>
   </item>
 
   <item>
-
-    <title>
-      Google vai suportar o método HTTP QUERY, mas ainda não agora - iMasters
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/pt/news/google-vai-suportar-o-m-todo-http-query-mas-ainda-n-o-agora-imasters-3ab0236c/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/pt/news/google-vai-suportar-o-m-todo-http-query-mas-ainda-n-o-agora-imasters-3ab0236c/
-    </guid>
-
-    <pubDate>
-      Tue, 18 Aug 2026 13:02:45 +0000
-    </pubDate>
-
-    <description>
-      iMasters
-    </description>
-
+    <title>Google vai suportar o método HTTP QUERY, mas ainda não agora - iMasters</title>
+    <link>https://news.seoschweiz.net/pt/news/google-vai-suportar-o-m-todo-http-query-mas-ainda-n-o-agora-imasters-3ab0236c/</link>
+    <guid isPermaLink="true">https://news.seoschweiz.net/pt/news/google-vai-suportar-o-m-todo-http-query-mas-ainda-n-o-agora-imasters-3ab0236c/</guid>
+    <pubDate>Tue, 18 Aug 2026 13:02:45 +0000</pubDate>
+    <description>iMasters</description>
   </item>
 
 
