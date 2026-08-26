@@ -1,0 +1,85 @@
+name: Submit SEO News to IndexNow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  submit-indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Submit sitemap URLs to IndexNow
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          KEY = "seo-news-indexnow-7c31f2a9"
+          HOST = "news.seoschweiz.net"
+          KEY_LOCATION = "https://news.seoschweiz.net/seo-news-indexnow-7c31f2a9.txt"
+
+          sitemap_files = [
+              "sitemap.xml",
+              "news-sitemap.xml"
+          ]
+
+          urls = set()
+
+          for sitemap_file in sitemap_files:
+              try:
+                  tree = ET.parse(sitemap_file)
+                  root = tree.getroot()
+
+                  for element in root.iter():
+                      if element.tag.endswith("loc") and element.text:
+                          url = element.text.strip()
+
+                          if url.startswith("https://news.seoschweiz.net/"):
+                              urls.add(url)
+
+              except FileNotFoundError:
+                  print(f"Skipped missing sitemap: {sitemap_file}")
+
+          urls = sorted(urls)
+
+          if not urls:
+              raise SystemExit("No URLs found in sitemap files.")
+
+          payload = {
+              "host": HOST,
+              "key": KEY,
+              "keyLocation": KEY_LOCATION,
+              "urlList": urls
+          }
+
+          request = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={
+                  "Content-Type": "application/json; charset=utf-8"
+              },
+              method="POST"
+          )
+
+          try:
+              with urllib.request.urlopen(request) as response:
+                  print("IndexNow HTTP status:", response.status)
+                  print("Submitted URLs:", len(urls))
+
+                  for url in urls:
+                      print("Submitted:", url)
+
+          except urllib.error.HTTPError as error:
+              print("IndexNow HTTP error:", error.code)
+              print(error.read().decode("utf-8", errors="ignore"))
+              raise
+
+          PY
