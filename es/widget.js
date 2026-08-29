@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "SEO Suiza Update: Cómo hacer chocolate Abuelita con leche Clavel: receta tradicional y consejos para un resultado cremoso", "url": "https://news.seoschweiz.net/es/news/c-mo-hacer-chocolate-abuelita-con-leche-clavel-receta-tradicional-y-co-d829148d/", "source": "Cardamomo.news"}, {"title": "SEO Suiza Update: ¿Cómo ayudar a tu amiga a salir de una relación tóxica sin perder su amistad en el intento?", "url": "https://news.seoschweiz.net/es/news/c-mo-ayudar-a-tu-amiga-a-salir-de-una-relaci-n-t-xica-sin-perder-su-am-39b1ac11/", "source": "En Pareja"}, {"title": "Novedad SEO: ¡Raúl Jiménez no falla! Vuelve a marcar y mantiene su racha perfecta en Inglaterra", "url": "https://news.seoschweiz.net/es/news/ra-l-jim-nez-no-falla-vuelve-a-marcar-y-mantiene-su-racha-perfecta-en--7b5bd6e3/", "source": "Al Bat"}, {"title": "Novedad SEO: Fútbol: ¡Sin filtro! Mourinho destroza el criterio del Balón de Oro y prende la polémica", "url": "https://news.seoschweiz.net/es/news/f-tbol-sin-filtro-mourinho-destroza-el-criterio-del-bal-n-de-oro-y-pre-d639370a/", "source": "Al Bat"}, {"title": "SEO Suiza Update: ¿Por qué avanzar muy rápido hacia la intimidad es una señal de alerta?", "url": "https://news.seoschweiz.net/es/news/por-qu-avanzar-muy-r-pido-hacia-la-intimidad-es-una-se-al-de-alerta-en-48595863/", "source": "En Pareja"}];
+var items = [];
 
 var widgetTitle = "Noticias SEO Suiza";
 
