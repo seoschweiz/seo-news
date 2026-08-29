@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "Nouveauté Google Search: Amazon mise sur l’AI commerce : faut-il craindre que l’achat se fasse dans l’agent avant votre site - Info-...", "url": "https://news.seoschweiz.net/fr/news/amazon-mise-sur-l-ai-commerce-faut-il-craindre-que-l-achat-se-fasse-da-97b8d8ab/", "source": "Info-Ecommerce"}, {"title": "Mise à jour SEO: C à vous : horaire, chroniqueurs, replay, direct… guide complet de l’émission d’Anne-Elizabeth Lemoine sur...", "url": "https://news.seoschweiz.net/fr/news/c-vous-horaire-chroniqueurs-replay-direct-guide-complet-de-l-mission-d-d72134b5/", "source": "Télé Star"}, {"title": "Nouveauté Google Search: Quotidien : horaire, replay, chroniqueurs, direct… guide complet de l’émission de Yann Barthès sur TMC", "url": "https://news.seoschweiz.net/fr/news/quotidien-horaire-replay-chroniqueurs-direct-guide-complet-de-l-missio-dda3a1ca/", "source": "Télé Star"}, {"title": "Nouveauté Google Search: Fin des liens directs dans les résultats Google : ce qui change pour l’analyse SEO", "url": "https://news.seoschweiz.net/fr/news/fin-des-liens-directs-dans-les-r-sultats-google-ce-qui-change-pour-l-a-265c4797/", "source": "blogdumoderateur.com"}, {"title": "Mise à jour SEO: Fort Boyard : pourquoi un épisode inédit est diffusé ce jeudi 27 août sur France 2", "url": "https://news.seoschweiz.net/fr/news/fort-boyard-pourquoi-un-pisode-in-dit-est-diffus-ce-jeudi-27-ao-t-sur--7640f209/", "source": "Télé Star"}];
 
 var widgetTitle = "Actualités SEO Suisse";
 

@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "SEO Update: EssilorLuxottica avvia un programma di buyback fino a 5 milioni di azioni – LMF", "url": "https://news.seoschweiz.net/it/news/essilorluxottica-avvia-un-programma-di-buyback-fino-a-5-milioni-di-azi-867da672/", "source": "LaMiaFinanza"}, {"title": "Aggiornamento Google Search: Google cambia le regole sul Parasite SEO in Europa: meno immediata la penalizzazione dei siti, rischi per i...", "url": "https://news.seoschweiz.net/it/news/google-cambia-le-regole-sul-parasite-seo-in-europa-meno-immediata-la-p-2adf967e/", "source": "JAMMA"}, {"title": "Aggiornamento Google Search: Geo VS Seo: qual è la differenza e come cambia la ricerca con l’intelligenza artificiale?", "url": "https://news.seoschweiz.net/it/news/geo-vs-seo-qual-la-differenza-e-come-cambia-la-ricerca-con-l-intellige-cf4d7016/", "source": "CorriereNerd.it"}, {"title": "Aggiornamento Google Search: Cina, la guerra commerciale dell’Europa. Ursula von der Leyen: dialogo e risultati concreti – LMF", "url": "https://news.seoschweiz.net/it/news/cina-la-guerra-commerciale-dell-europa-ursula-von-der-leyen-dialogo-e--3a83ab11/", "source": "LaMiaFinanza"}, {"title": "Aggiornamento Google Search: Meta, nuove misure per i minori. Che cosa cambia per Facebook e Instagram. TikTok e Youtube sorridono", "url": "https://news.seoschweiz.net/it/news/meta-nuove-misure-per-i-minori-che-cosa-cambia-per-facebook-e-instagra-e423ac95/", "source": "LaMiaFinanza"}];
 
 var widgetTitle = "Notizie SEO Svizzera";
 
