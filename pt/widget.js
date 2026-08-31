@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "Nova atualização Google Search: Google leva carrosséis de links para o AI Mode em tópicos em evolução", "url": "https://news.seoschweiz.net/pt/news/google-leva-carross-is-de-links-para-o-ai-mode-em-t-picos-em-evolu-o-i-d557b70b/", "source": "iMasters"}, {"title": "Novo desenvolvimento SEO: google.com/goto: o que muda no rastreio de SERP", "url": "https://news.seoschweiz.net/pt/news/google-com-goto-o-que-muda-no-rastreio-de-serp-imasters-ab582842/", "source": "iMasters"}];
+var items = [{"title": "Novidade SEO: MEC abre 3 mil vagas em curso EAD em EJA e Educação Especial Inclusiva", "url": "https://news.seoschweiz.net/pt/news/mec-abre-3-mil-vagas-em-curso-ead-em-eja-e-educa-o-especial-inclusiva--13fb3037/", "source": "Hora Brasil"}, {"title": "Nova atualização Google Search: Google leva carrosséis de links para o AI Mode em tópicos em evolução", "url": "https://news.seoschweiz.net/pt/news/google-leva-carross-is-de-links-para-o-ai-mode-em-t-picos-em-evolu-o-i-d557b70b/", "source": "iMasters"}, {"title": "Novo desenvolvimento SEO: google.com/goto: o que muda no rastreio de SERP", "url": "https://news.seoschweiz.net/pt/news/google-com-goto-o-que-muda-no-rastreio-de-serp-imasters-ab582842/", "source": "iMasters"}];
 
 var widgetTitle = "Notícias SEO Suíça";
 
