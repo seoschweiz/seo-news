@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "SEO Suíça Update: Google Search Console libera para todos o relatório de IA e o controle para bloquear AI Overviews", "url": "https://news.seoschweiz.net/pt/news/google-search-console-libera-para-todos-o-relat-rio-de-ia-e-o-controle-3a3a4d5f/", "source": "iMasters"}, {"title": "Novidade SEO: MEC abre 3 mil vagas em curso EAD em EJA e Educação Especial Inclusiva", "url": "https://news.seoschweiz.net/pt/news/mec-abre-3-mil-vagas-em-curso-ead-em-eja-e-educa-o-especial-inclusiva--13fb3037/", "source": "horabrasil.com.br"}, {"title": "Nova atualização Google Search: Google leva carrosséis de links para o AI Mode em tópicos em evolução", "url": "https://news.seoschweiz.net/pt/news/google-leva-carross-is-de-links-para-o-ai-mode-em-t-picos-em-evolu-o-i-d557b70b/", "source": "iMasters"}];
+var items = [{"title": "SEO Suíça Update: Google Search Console libera para todos o relatório de IA e o controle para bloquear AI Overviews", "url": "https://news.seoschweiz.net/pt/news/google-search-console-libera-para-todos-o-relat-rio-de-ia-e-o-controle-3a3a4d5f/", "source": "iMasters"}, {"title": "Novidade SEO: MEC abre 3 mil vagas em curso EAD em EJA e Educação Especial Inclusiva", "url": "https://news.seoschweiz.net/pt/news/mec-abre-3-mil-vagas-em-curso-ead-em-eja-e-educa-o-especial-inclusiva--13fb3037/", "source": "Hora Brasil"}, {"title": "Nova atualização Google Search: Google leva carrosséis de links para o AI Mode em tópicos em evolução", "url": "https://news.seoschweiz.net/pt/news/google-leva-carross-is-de-links-para-o-ai-mode-em-t-picos-em-evolu-o-i-d557b70b/", "source": "iMasters"}];
 
 var widgetTitle = "Notícias SEO Suíça";
 
