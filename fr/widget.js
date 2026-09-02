@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "Nouvelle évolution SEO: Otrak mesure votre visibilité dans les moteurs d’IA", "url": "https://news.seoschweiz.net/fr/news/otrak-mesure-votre-visibilit-dans-les-moteurs-d-ia-l-officiel-des-terr-f5c98757/", "source": "L'Officiel des terrains de camping"}, {"title": "Nouvelle évolution SEO: Pilot’in fusionne avec Les Imageurs et renforce son ancrage régional", "url": "https://news.seoschweiz.net/fr/news/pilot-in-fusionne-avec-les-imageurs-et-renforce-son-ancrage-r-gional-l-2abca09c/", "source": "Lyon Entreprises [LE]"}, {"title": "Actualité du référencement: SEO : La visibilité des PME françaises face à la montée des IA", "url": "https://news.seoschweiz.net/fr/news/seo-la-visibilit-des-pme-fran-aises-face-la-mont-e-des-ia-presseagence-91256078/", "source": "presseagence.fr"}, {"title": "Nouveauté Google Search: Matt Pokora au casting de Oradour sur TF1 : Nos chers voisins, Sc ...", "url": "https://news.seoschweiz.net/fr/news/matt-pokora-au-casting-de-oradour-sur-tf1-nos-chers-voisins-sc-t-l-sta-8c350519/", "source": "Télé Star"}, {"title": "Nouveauté Google Search: Google Search et parasite SEO : les pénalités manuelles ne s'appliquent-elles vraiment plus en Europe ?", "url": "https://news.seoschweiz.net/fr/news/google-search-et-parasite-seo-les-p-nalit-s-manuelles-ne-s-appliquent--6925f228/", "source": "Leptidigital"}];
 
 var widgetTitle = "Actualités SEO Suisse";
 

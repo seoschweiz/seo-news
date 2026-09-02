@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "SEO News Update: Empire State SEO Highlights Why Ongoing Search Engine", "url": "https://news.seoschweiz.net/en/news/empire-state-seo-highlights-why-ongoing-search-engine-openpr-com-eb8c5537/", "source": "openPR.com"}, {"title": "Latest Search Development: The Best Full-Service Digital Marketing Agencies in the UK - talk-business.co.uk", "url": "https://news.seoschweiz.net/en/news/the-best-full-service-digital-marketing-agencies-in-the-uk-talk-busine-d8821640/", "source": "talk-business.co.uk"}, {"title": "Latest Search Development: Bazaarvoice introduces AI Visibility package to prime brand content and UGC for AI recommendation", "url": "https://news.seoschweiz.net/en/news/bazaarvoice-introduces-ai-visibility-package-to-prime-brand-content-an-b6a60418/", "source": "The Manila Times"}, {"title": "Latest Search Development: Top 10 SEO Companies in Pakistan", "url": "https://news.seoschweiz.net/en/news/top-10-seo-companies-in-pakistan-programming-insider-f8acf9e4/", "source": "Programming Insider"}, {"title": "Google Search Update: Global: Google Search Console AI Performance Report & AI Control", "url": "https://news.seoschweiz.net/en/news/global-google-search-console-ai-performance-report-ai-control-search-e-ce8c911e/", "source": "Search Engine Roundtable"}];
 
 var widgetTitle = "SEO News Switzerland";
 
