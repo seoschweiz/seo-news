@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "Nouveauté Google Search: Google Search et parasite SEO : les pénalités manuelles ne s'appliquent-elles vraiment plus en Europe ?", "url": "https://news.seoschweiz.net/fr/news/google-search-et-parasite-seo-les-p-nalit-s-manuelles-ne-s-appliquent--6925f228/", "source": "Leptidigital"}, {"title": "Nouvelle évolution SEO: google.com/goto : Google casse le scraping des résultats de recherche", "url": "https://news.seoschweiz.net/fr/news/google-com-goto-google-casse-le-scraping-des-r-sultats-de-recherche-le-b8271aa7/", "source": "Leptidigital"}, {"title": "Nouveauté Google Search: Amazon mise sur l’AI commerce : faut-il craindre que l’achat se fasse dans l’agent avant votre site - info-...", "url": "https://news.seoschweiz.net/fr/news/amazon-mise-sur-l-ai-commerce-faut-il-craindre-que-l-achat-se-fasse-da-97b8d8ab/", "source": "info-ecommerce.fr"}];
 
 var widgetTitle = "Actualités SEO Suisse";
 

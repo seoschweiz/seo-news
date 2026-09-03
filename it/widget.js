@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "Aggiornamento Google Search: Geo VS Seo: qual è la differenza e come cambia la ricerca con l’intelligenza artificiale?", "url": "https://news.seoschweiz.net/it/news/geo-vs-seo-qual-la-differenza-e-come-cambia-la-ricerca-con-l-intellige-cf4d7016/", "source": "CorriereNerd.it"}];
 
 var widgetTitle = "Notizie SEO Svizzera";
 

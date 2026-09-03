@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "SEO Update: Liga MX: ¿Carlos Acevedo a Europa? Equipo de LaLiga lanza oferta de último minuto al Santos Laguna", "url": "https://news.seoschweiz.net/es/news/liga-mx-carlos-acevedo-a-europa-equipo-de-laliga-lanza-oferta-de-ltimo-1bbcfb05/", "source": "Al Bat"}, {"title": "Actualidad SEO: MLS: ¿Cuánto gana Carlos Vela ahora que está retirado del fútbol y es parte dueño del LAFC?", "url": "https://news.seoschweiz.net/es/news/mls-cu-nto-gana-carlos-vela-ahora-que-est-retirado-del-f-tbol-y-es-par-65d25762/", "source": "Al Bat"}, {"title": "Novedad SEO: ¡Raúl Jiménez no falla! Vuelve a marcar y mantiene su racha perfecta en Inglaterra", "url": "https://news.seoschweiz.net/es/news/ra-l-jim-nez-no-falla-vuelve-a-marcar-y-mantiene-su-racha-perfecta-en--7b5bd6e3/", "source": "Al Bat"}, {"title": "Novedad SEO: Fútbol: ¡Sin filtro! Mourinho destroza el criterio del Balón de Oro y prende la polémica", "url": "https://news.seoschweiz.net/es/news/f-tbol-sin-filtro-mourinho-destroza-el-criterio-del-bal-n-de-oro-y-pre-d639370a/", "source": "Al Bat"}, {"title": "Actualidad SEO: ¡Contrato millonario o bombazo! Wizards se juegan todo con Anthony Davis y la NBA ya espera un posible canje", "url": "https://news.seoschweiz.net/es/news/contrato-millonario-o-bombazo-wizards-se-juegan-todo-con-anthony-davis-c59afd9f/", "source": "Al Bat"}];
+var items = [];
 
 var widgetTitle = "Noticias SEO Suiza";
 
