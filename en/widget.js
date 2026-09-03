@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "Search Update: Publishers Noticing Google News Tab Content Disappearing", "url": "https://news.seoschweiz.net/en/news/publishers-noticing-google-news-tab-content-disappearing-search-engine-e7fee6da/", "source": "Search Engine Roundtable"}, {"title": "Google Search Update: The Next Search War Will Be Fought Over Source Eligibility", "url": "https://news.seoschweiz.net/en/news/the-next-search-war-will-be-fought-over-source-eligibility-designrush-3da34972/", "source": "DesignRush"}, {"title": "SEO Schweiz Update: Digital Ansh Vyas Builds a Growing Professional Presence as a Certified Digital Marketer in Mumbai", "url": "https://news.seoschweiz.net/en/news/digital-ansh-vyas-builds-a-growing-professional-presence-as-a-certifie-0ea7cb96/", "source": "Issuewire"}, {"title": "Search Update: Digital Yashika Chandalia Expands Her Digital Marketing Focus to Help Mumbai Businesses Build Stronger Onli...", "url": "https://news.seoschweiz.net/en/news/digital-yashika-chandalia-expands-her-digital-marketing-focus-to-help--4522a4c8/", "source": "Issuewire"}, {"title": "Search Update: Five Leading AI Search Optimization Service Providers in 2026: Shaping the Future of Intelligent Content Di...", "url": "https://news.seoschweiz.net/en/news/five-leading-ai-search-optimization-service-providers-in-2026-shaping--4e08cc7c/", "source": "EIN Presswire"}];
 
 var widgetTitle = "SEO News Switzerland";
 

@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "SEO Suiza Update: 5 comidas mexicanas saludables y sencillas: ideales para comenzar una dieta", "url": "https://news.seoschweiz.net/es/news/5-comidas-mexicanas-saludables-y-sencillas-ideales-para-comenzar-una-d-bc75ac5e/", "source": "Cardamomo.news"}, {"title": "Novedad SEO: Empresas: SEM y SEO, dos vías para diversificar la captación de clientes, ¿cómo reducir la dependencia de l...", "url": "https://news.seoschweiz.net/es/news/empresas-sem-y-seo-dos-v-as-para-diversificar-la-captaci-n-de-clientes-ee1345f1/", "source": "infobae.com"}, {"title": "SEO Update: Cómo preparar una michelada con Clamato: receta, consejos y tendencias 2026", "url": "https://news.seoschweiz.net/es/news/c-mo-preparar-una-michelada-con-clamato-receta-consejos-y-tendencias-2-0f0682c8/", "source": "Cardamomo.news"}, {"title": "Nueva evolución SEO: Antojitos mexicanos ideales para reuniones: botanas prácticas, deliciosas y llenas de tradición", "url": "https://news.seoschweiz.net/es/news/antojitos-mexicanos-ideales-para-reuniones-botanas-pr-cticas-deliciosa-38ec5e75/", "source": "Cardamomo.news"}, {"title": "Nueva actualización de Google Search: Receta original de galletas con chispas de chocolate: suaves por dentro y doraditas por fuera", "url": "https://news.seoschweiz.net/es/news/receta-original-de-galletas-con-chispas-de-chocolate-suaves-por-dentro-94fc0747/", "source": "Cardamomo.news"}];
 
 var widgetTitle = "Noticias SEO Suiza";
 
