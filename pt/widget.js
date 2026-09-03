@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "Nova atualização Google Search: Adobe adquire startup indiana Rilo focada em inteligência de mercado", "url": "https://news.seoschweiz.net/pt/news/adobe-adquire-startup-indiana-rilo-focada-em-intelig-ncia-de-mercado-b-c4e71162/", "source": "Boa Informação"}, {"title": "Atualidade SEO: GEO PR: Yara Rocca Comunicação une assessoria de imprensa, mapa semântico e inteligência artificial para…", "url": "https://news.seoschweiz.net/pt/news/geo-pr-yara-rocca-comunica-o-une-assessoria-de-imprensa-mapa-sem-ntico-c761781e/", "source": "Jornal do Brás"}, {"title": "Nova atualização Google Search: Google leva carrosséis de links para o AI Mode em tópicos em evolução", "url": "https://news.seoschweiz.net/pt/news/google-leva-carross-is-de-links-para-o-ai-mode-em-t-picos-em-evolu-o-i-d557b70b/", "source": "iMasters"}];
+var items = [];
 
 var widgetTitle = "Notícias SEO Suíça";
 
