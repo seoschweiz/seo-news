@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "Aggiornamento Google Search: Geo VS Seo: qual è la differenza e come cambia la ricerca con l’intelligenza artificiale?", "url": "https://news.seoschweiz.net/it/news/geo-vs-seo-qual-la-differenza-e-come-cambia-la-ricerca-con-l-intellige-cf4d7016/", "source": "CorriereNerd.it"}, {"title": "Aggiornamento Google Search: Google cambia le regole sul Parasite SEO in Europa: meno immediata la penalizzazione dei siti, rischi per i...", "url": "https://news.seoschweiz.net/it/news/google-cambia-le-regole-sul-parasite-seo-in-europa-meno-immediata-la-p-2adf967e/", "source": "JAMMA"}];
+var items = [];
 
 var widgetTitle = "Notizie SEO Svizzera";
 

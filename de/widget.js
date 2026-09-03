@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "Google Search News: Lieferantensuche mit KI-Unterstützung von Ensun", "url": "https://news.seoschweiz.net/de/news/lieferantensuche-mit-ki-unterst-tzung-von-ensun-wochenzeitung-verkehr-f5c1bfcf/", "source": "Wochenzeitung Verkehr"}];
+var items = [];
 
 var widgetTitle = "SEO News Schweiz";
 

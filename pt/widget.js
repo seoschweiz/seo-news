@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [];
+var items = [{"title": "Novidade SEO: Terminam amanhã as inscrições para curso de graduação na UFGD", "url": "https://news.seoschweiz.net/pt/news/terminam-amanh-as-inscri-es-para-curso-de-gradua-o-na-ufgd-horabrasil--ac06e831/", "source": "horabrasil.com.br"}];
 
 var widgetTitle = "Notícias SEO Suíça";
 
