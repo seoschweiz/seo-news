@@ -130,11 +130,11 @@ type="application/rss+xml" />
     </title>
 
     <link>
-      https://news.seoschweiz.net/en/news/the-next-search-war-will-be-fought-over-source-eligibility-designrush-061f8a1c/
+      https://news.seoschweiz.net/en/news/the-next-search-war-will-be-fought-over-source-eligibility-news-design-061f8a1c/
     </link>
 
     <guid isPermaLink="true">
-      https://news.seoschweiz.net/en/news/the-next-search-war-will-be-fought-over-source-eligibility-designrush-061f8a1c/
+      https://news.seoschweiz.net/en/news/the-next-search-war-will-be-fought-over-source-eligibility-news-design-061f8a1c/
     </guid>
 
     <pubDate>
@@ -226,11 +226,11 @@ type="application/rss+xml" />
     </title>
 
     <link>
-      https://news.seoschweiz.net/en/news/from-seo-to-ai-search-how-thatware-is-helping-businesses-invest-in-aeo-eb0f966d/
+      https://news.seoschweiz.net/en/news/from-seo-to-ai-search-how-thatware-is-helping-businesses-invest-in-aeo-c2bac900/
     </link>
 
     <guid isPermaLink="true">
-      https://news.seoschweiz.net/en/news/from-seo-to-ai-search-how-thatware-is-helping-businesses-invest-in-aeo-eb0f966d/
+      https://news.seoschweiz.net/en/news/from-seo-to-ai-search-how-thatware-is-helping-businesses-invest-in-aeo-c2bac900/
     </guid>
 
     <pubDate>
@@ -238,7 +238,7 @@ type="application/rss+xml" />
     </pubDate>
 
     <description>
-      Latest SEO news about From SEO to AI Search: How ThatWare Is Helping Businesses Invest in AEO, GEO and LLM Optimization | Hindust.... Follow Google Search,...
+      Latest developments around From SEO to AI Search: How ThatWare Is Helping Businesses Invest in AEO, GEO and LLM Optimization | Hindust.... SEO Schweiz trac...
     </description>
 
   </item>
@@ -462,6 +462,30 @@ type="application/rss+xml" />
   <item>
 
     <title>
+      SEO Schweiz Update: RankYak Launches AI Platform That Handles Every Stage of SEO for Small Businesses and Agencies
+    </title>
+
+    <link>
+      https://news.seoschweiz.net/en/news/rankyak-launches-ai-platform-that-handles-every-stage-of-seo-for-small-8def8301/
+    </link>
+
+    <guid isPermaLink="true">
+      https://news.seoschweiz.net/en/news/rankyak-launches-ai-platform-that-handles-every-stage-of-seo-for-small-8def8301/
+    </guid>
+
+    <pubDate>
+      Wed, 02 Sep 2026 17:18:45 +0000
+    </pubDate>
+
+    <description>
+      Latest developments around RankYak Launches AI Platform That Handles Every Stage of SEO for Small Businesses and Agencies. SEO Schweiz tracks Google Search...
+    </description>
+
+  </item>
+
+  <item>
+
+    <title>
       SEO News Update: Google Trends Explore Page Adds Category Filtering
     </title>
 
@@ -479,30 +503,6 @@ type="application/rss+xml" />
 
     <description>
       Latest SEO news about Google Trends Explore Page Adds Category Filtering. Follow Google Search, ranking and search engine optimization developments with SE...
-    </description>
-
-  </item>
-
-  <item>
-
-    <title>
-      SEO News Update: High Altitude SEO Adds AI Visibility Consulting for NJ and National Brands
-    </title>
-
-    <link>
-      https://news.seoschweiz.net/en/news/high-altitude-seo-adds-ai-visibility-consulting-for-nj-and-national-br-7486e383/
-    </link>
-
-    <guid isPermaLink="true">
-      https://news.seoschweiz.net/en/news/high-altitude-seo-adds-ai-visibility-consulting-for-nj-and-national-br-7486e383/
-    </guid>
-
-    <pubDate>
-      Wed, 02 Sep 2026 13:15:00 +0000
-    </pubDate>
-
-    <description>
-      Current news about High Altitude SEO Adds AI Visibility Consulting for NJ and National Brands. SEO updates, Google Search developments and search engine op...
     </description>
 
   </item>
