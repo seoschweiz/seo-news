@@ -1,0 +1,42 @@
+name: Add localized SEO footer credits
+on:
+  push:
+    branches:
+      - codex/seo-footer-credits
+    paths:
+      - .github/scripts/add_seo_credits.py
+      - .github/workflows/add-seo-footer-credits.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add stable localized nofollow credits
+        run: python3 .github/scripts/add_seo_credits.py .
+      - name: Validate and commit
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          bad = []
+          for path in Path('.').rglob('*.html'):
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              for block in re.findall(r'<span class="seo-schweiz-credit".*?</span>', text, re.S):
+                  if block.count('href="https://seoschweiz.net/" rel="nofollow"') != 1:
+                      bad.append(str(path))
+          if bad:
+              raise SystemExit("Invalid credits: " + ", ".join(bad[:20]))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.html'
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m "Add localized SEO Schweiz footer credits"
+            git push
+          fi
