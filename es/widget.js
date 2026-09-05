@@ -1,7 +1,7 @@
 
 (function() {
 
-var items = [{"title": "Nueva actualización de Google Search: La IA rompe las reglas del ecommerce: emprendedores mexicanos tendrán que vender más allá de su tienda onli...", "url": "https://news.seoschweiz.net/es/news/la-ia-rompe-las-reglas-del-ecommerce-emprendedores-mexicanos-tendr-n-q-70026a3c/", "source": "Noticias - Almomento"}, {"title": "SEO Update: Playoffs LMB: La batalla campal que se desató en el Juego 5 entre Olmecas y Pericos en la Final del Sur", "url": "https://news.seoschweiz.net/es/news/playoffs-lmb-la-batalla-campal-que-se-desat-en-el-juego-5-entre-olmeca-ba6338df/", "source": "Al Bat"}, {"title": "SEO Suiza Update: El gran reto del SEO local no es posicionar una tienda, sino coordinar cientos", "url": "https://news.seoschweiz.net/es/news/el-gran-reto-del-seo-local-no-es-posicionar-una-tienda-sino-coordinar--3046811c/", "source": "PuroMarketing"}, {"title": "Actualidad SEO: LaLiga: ¡Mourinho explota tras derrota del Real Madrid! Revienta al árbitro y acusa teatro de Betis", "url": "https://news.seoschweiz.net/es/news/laliga-mourinho-explota-tras-derrota-del-real-madrid-revienta-al-rbitr-b1ca2a3b/", "source": "Al Bat"}, {"title": "Novedad SEO: MLB: ¡La novela no termina! Catcher vuelve otra vez a la organización de Dodgers", "url": "https://news.seoschweiz.net/es/news/mlb-la-novela-no-termina-catcher-vuelve-otra-vez-a-la-organizaci-n-de--0c0d7bd4/", "source": "Al Bat"}];
+var items = [];
 
 var widgetTitle = "Noticias SEO Suiza";
 
