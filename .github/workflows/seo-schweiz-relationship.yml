@@ -1,0 +1,42 @@
+name: SEO Schweiz relationship metadata
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: seo-schweiz-relationship
+  cancel-in-progress: true
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add structured relationship metadata
+        shell: python
+        run: |
+          from pathlib import Path
+          marker = 'id="seo-schweiz-relationship"'
+          relation = '"publisher":{"@id":"https://seoschweiz.net/#organization"}'
+          snippet = '<script id="seo-schweiz-relationship" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://seoschweiz.net/#organization","name":"SEO Schweiz","url":"https://seoschweiz.net/"},{"@type":"WebPage","publisher":{"@id":"https://seoschweiz.net/#organization"}}]}</script>'
+          changed = 0
+          for path in Path('.').rglob('*.html'):
+              text = path.read_text(encoding='utf-8', errors='ignore')
+              low = text.lower()
+              if marker in text or relation in text or '</head>' not in low:
+                  continue
+              if 'name="robots"' in low and 'noindex' in low:
+                  continue
+              pos = low.rfind('</head>')
+              path.write_text(text[:pos] + snippet + '\n' + text[pos:], encoding='utf-8')
+              changed += 1
+          print(f'Updated {changed} HTML files')
+      - name: Commit generated metadata
+        run: |
+          git config user.name "SEO Schweiz Automation"
+          git config user.email "automation@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Add SEO Schweiz relationship metadata"
+          git push
